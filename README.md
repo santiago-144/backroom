@@ -6,3 +6,4 @@ repositorio del proyecto del bootcamp
 * 3)Ángel López Hernádez
 * 4)Jonatan Eder Campos Arriaran
 * 5)Sesai Cazares
+* 6)Gabriel Yael Gonzalez Cruz
