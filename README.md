@@ -1,9 +1,9 @@
 # backroom
 repositorio del proyecto del bootcamp
 # Integrantes
-* 1)Carlos Santiago Gómez Cruz
-* 2)David Aguilera Peláez
-* 3)Ángel López Hernádez
-* 4)Jonatan Eder Campos Arriaran
-* 5)Sesai Cazares
-* 6)Gabriel Yael Gonzalez Cruz
+* Carlos Santiago Gómez Cruz
+* David Aguilera Peláez
+* Ángel López Hernádez
+* Jonatan Eder Campos Arriaran
+* Sesai Cazares
+* Gabriel Yael Gonzalez Cruz
