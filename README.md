@@ -2,7 +2,7 @@
 repositorio del proyecto del bootcamp
 # Integrantes
 * Carlos Santiago Gómez Cruz
-* David Aguilera Peláez
+* Luis Alberto Jiménez Sánchez
 * Ángel López Hernádez
 * Jonatan Eder Campos Arriaran
 * Sesai Cazares
