@@ -6,7 +6,7 @@
     "dev": "vite src",
     "build": "vite build",
     "preview": "vite preview",
-    "sassCompile": "node_modules/.bin/sass src/assets/scss/main.scss src/main.css"
+    "sassCompile": "sass src/main.scss src/main.css"
   },
   "devDependencies": {
     "bootstrap": "4.6",
