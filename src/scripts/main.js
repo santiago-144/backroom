@@ -1,6 +1,6 @@
 import '../main.css'
 
 document.querySelector('#app').innerHTML = `
-  <h1>Hello Vite!</h1>
-  <a href="../pages/Registro.html" target="_blank">Documentation</a>
+  <h1>Backroom</h1>
+  <a href="../pages/Registro.html" target="_blank">Registrate</a>
 `
