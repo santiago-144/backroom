@@ -9957,7 +9957,7 @@ h3 {
   padding: 0;
 }
 
-#container {
+#container_login {
   margin-top: 28vh;
   /* margin-bottom: 25vh; */
 }
@@ -9972,7 +9972,7 @@ h3 {
   justify-content: center;
 }
 
-footer {
+#footer_login {
   height: auto;
   background: rgba(196, 196, 196, 0.2);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -10023,7 +10023,38 @@ footer {
 
 #logo_bk {
   width: 200px;
-  height: 150px;
+  height: 130px;
+}
+
+#barra {
+  border: 3px solid rgba(83, 82, 82, 0.363);
+  border-radius: 10px;
+  border-top: none;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#feet {
+  justify-content: center;
+  margin-top: 15vh;
+  background-color: rgb(202, 198, 198);
+  height: 70px;
+}
+
+#dev1, #dev2, #dev3 {
+  text-align: center;
+  align-items: center;
+}
+
+#imagenes-contactol {
+  height: 40px;
+  width: 40px;
+}
+
+#imagenes-contactog {
+  height: 60px;
+  width: 60px;
 }
 
 /*# sourceMappingURL=main.css.map */
