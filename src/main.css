@@ -5,6 +5,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -9943,6 +9944,13 @@ h3 {
     border-color: #dee2e6;
   }
 }
+#back-color {
+  background-image: url(img/humo2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -9951,32 +9959,71 @@ h3 {
 
 #container {
   margin-top: 28vh;
-  margin-bottom: 25vh;
+  /* margin-bottom: 25vh; */
 }
 
-#form {
-  text-align: center;
-  align-items: center;
-}
+/* #form{
 
+    text-align: center;
+    align-items: center;;
+} */
 .form-control {
   text-align: center;
   justify-content: center;
 }
 
-button {
-  color: white;
-  width: 270px;
-  border-radius: 5px;
-  background-color: rgb(173, 53, 177);
-  border: none;
+footer {
+  height: auto;
+  background: rgba(196, 196, 196, 0.2);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-footer {
-  justify-content: center;
-  margin-top: 15vh;
-  background-color: rgb(202, 198, 198);
-  height: 70px;
+#login {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  color: #000000;
+  text-shadow: 0px 7px 4px rgba(0, 0, 0, 0.25);
+}
+
+.format-login {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  width: 310px;
+  height: 36px;
+}
+
+#button-login {
+  width: 310px;
+  height: 50px;
+  background: #BC6FF1;
+  border-radius: 10px;
+  transform: rotate(0.12deg);
+  border: none;
+  color: white;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+#img-teen {
+  height: 200px;
+  margin-bottom: 10vw;
+}
+
+#tenn {
+  width: 150px;
+  height: 200px;
+  margin-left: 5vw;
+}
+
+#logo_bk {
+  width: 200px;
+  height: 150px;
 }
 
 /*# sourceMappingURL=main.css.map */
