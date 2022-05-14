@@ -1,0 +1,13 @@
+// vite.config.js
+import { defineConfig } from 'vite'
+import legacy from '@vitejs/plugin-legacy'
+// import { IndexHtmlTransform } from 'vite'
+// import htmlPlugin from 'vite-plugin-index-html'
+
+export default defineConfig({
+  plugins: [
+    legacy({
+      targets: ['defaults', 'not IE 11']
+    })
+  ]
+})
