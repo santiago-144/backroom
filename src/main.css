@@ -6,6 +6,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -10023,7 +10024,51 @@ h3 {
 
 #logo_bk {
   width: 200px;
-  height: 150px;
+  height: 130px;
+}
+
+#barra {
+  border: 3px solid rgba(83, 82, 82, 0.363);
+  border-radius: 10px;
+  border-top: none;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#feet {
+  justify-content: center;
+  margin-top: 15vh;
+  background-color: rgb(202, 198, 198);
+  height: 70px;
+}
+
+#dev1, #dev2, #dev3 {
+  text-align: center;
+  align-items: center;
+}
+
+#imagenes-contactol {
+  height: 40px;
+  width: 40px;
+}
+
+#imagenes-contactog {
+  height: 60px;
+  width: 60px;
+}
+
+#img-perfil {
+  height: 120px;
+  width: 120px;
+}
+
+#medios {
+  text-align: center;
+}
+
+#textous {
+  font-family: "Roboto", sans-serif;
 }
 
 /*# sourceMappingURL=main.css.map */
