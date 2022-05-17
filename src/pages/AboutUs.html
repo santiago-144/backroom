@@ -10,15 +10,23 @@
 </head>
 <body class="text-center">
     <div class="barra" id="barra">
-        <nav class="navbar navbar-light bg-light">
-            <div class="search">
-                <form class="form-inline">
-                    <input class="form-control rounded-pill" type="search" id="search" placeholder="🔍︎Search" aria-label="Search">
-                 
-                  </form>
+        <nav id="row-navbar" class="navbar navbar-expand-lg align-items-center">
+            <div class="col-4 text-left">
+              <a href="#"><img src="assets/icon/Logo-navbar.svg" alt=""></a>
+              <a href="#"><img src="assets/icon/Home.svg" alt=""></a>
             </div>
-    </nav>
-    
+            <div id="container-searchbar" class="col-4 text-center">
+              <form id="search-bar" class="">
+                <button type="submit"><img src="assets/icon/icon-search.svg"></button>            
+                <input  type="text" class="" placeholder="" >
+              </form>
+            </div>
+            <div class="col-4 text-right">
+              <a href="#"><img src="assets/icon/icon-notifications.svg" alt=""></a>
+              <a href="#"><img src="assets/icon/icon-user.svg" alt=""></a>
+              <a href="#"><img src="assets/icon/icon-hamburger.svg" alt=""></a>
+            </div>
+          </nav>
     </div>
     
     
