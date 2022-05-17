@@ -9945,11 +9945,9 @@ h3 {
     border-color: #dee2e6;
   }
 }
-#back-color {
-  background-image: url(img/humo2.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+#html_login_regis {
+  position: relative;
+  min-height: 100%;
 }
 
 * {
@@ -9958,25 +9956,21 @@ h3 {
   padding: 0;
 }
 
-#container_login {
-  margin-top: 28vh;
-  /* margin-bottom: 25vh; */
+#back-color {
+  background-image: url(img/humo2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-bottom: 60px;
 }
 
-/* #form{
+#container_login_regis {
+  margin-top: 23vh;
+}
 
-    text-align: center;
-    align-items: center;;
-} */
 .form-control {
   text-align: center;
   justify-content: center;
-}
-
-#footer_login {
-  height: auto;
-  background: rgba(196, 196, 196, 0.2);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 #login {
@@ -9996,10 +9990,59 @@ h3 {
   height: 36px;
 }
 
+#logo_bk {
+  width: 220px;
+  height: 130px;
+}
+
+#logo_bk_celular {
+  display: none;
+}
+
+#boy_solo {
+  display: none;
+}
+
+@media only screen and (max-width: 767px) {
+  #logo {
+    height: 150px;
+  }
+
+  #logo_bk_celular {
+    display: block;
+  }
+
+  #logo_bk {
+    display: none;
+  }
+
+  #back-color {
+    background-image: url(img/humo_celular.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center 0;
+    margin-bottom: 60px;
+  }
+
+  #container_login_regis {
+    margin-top: 10vh;
+  }
+
+  #tenn {
+    display: none;
+  }
+
+  #boy_solo {
+    display: block;
+    width: 150px;
+    height: 190px;
+    margin-left: 10vw;
+  }
+}
 #button-login {
   width: 310px;
   height: 50px;
-  background: #BC6FF1;
+  background: #bc6ff1;
   border-radius: 10px;
   transform: rotate(0.12deg);
   border: none;
@@ -10013,18 +10056,22 @@ h3 {
 
 #img-teen {
   height: 200px;
-  margin-bottom: 10vw;
 }
 
 #tenn {
   width: 150px;
-  height: 200px;
-  margin-left: 5vw;
+  height: 160px;
+  margin-left: 10vw;
 }
 
-#logo_bk {
-  width: 200px;
-  height: 130px;
+#footer_login {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  background: rgba(196, 196, 196, 0.2);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-top: 20vh;
 }
 
 #barra {
@@ -10043,7 +10090,9 @@ h3 {
   height: 70px;
 }
 
-#dev1, #dev2, #dev3 {
+#dev1,
+#dev2,
+#dev3 {
   text-align: center;
   align-items: center;
 }
