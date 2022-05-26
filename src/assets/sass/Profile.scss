@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* CONTACT */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+
+a {
+  text-decoration-line:none;
+  text-decoration: none;
+  text-decoration-color:black;
+}
+
+
+
+/* PERFIL */
+
+#row-navbar{
+  height: 50px;
+  border-radius: 10px;
+  box-shadow: #DDB7F8;
+  padding: 10px, 0;
+}
+
+#backroom-logo {
+  height: 35px;
+  text-align: left;
+}
+
+#navbar-search-bar {
+  border-radius: 15px;
+  border: 1px solid rgb(226, 226, 226);
+}
+
+#navbar-search-bar-icon {
+  background-color: #ffffff;
+  border-right: 0px solid white;
+}
+
+#container-searchbar{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+
+#search-bar{
+  width: 100%;
+  max-width: 700px;
+  background-color: rgba(255, 255, 255, 0.281);
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  padding: 0px 20px;
+  border: 1px solid rgba(219, 219, 219, 0.4);
+}
+
+#search-bar input{
+  background: transparent;
+  flex: 1;
+  border: 0;
+  outline: none;
+  
+  color: #cac7ff;
+}
+
+#search-bar button img{
+  width: 15px;
+}
+
+#search-bar button{
+  border: 0;
+  border-radius: 10px;
+  width: 20px;
+  height: 20px;
+  padding-right: 30px;
+  cursor: pointer;
+  background: transparent;
+}
+
+
+#profile-photo{
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+
+#profile-name {
+  font-size: 20px;
+  font-weight: bold;
+
+}
+
+#profile-section {
+  justify-content: space-between;
+}
+
+#section-saved{
+  border-top: 1px solid rgb(219, 219, 219);
+  font-size: 20px;
+  color: black;
+}

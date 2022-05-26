@@ -7,6 +7,7 @@
  */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -9945,11 +9946,9 @@ h3 {
     border-color: #dee2e6;
   }
 }
-#back-color {
-  background-image: url(img/humo2.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+#html_login_regis {
+  position: relative;
+  min-height: 100%;
 }
 
 * {
@@ -9958,25 +9957,25 @@ h3 {
   padding: 0;
 }
 
-#container_login {
-  margin-top: 28vh;
-  /* margin-bottom: 25vh; */
+#back-color {
+  background-image: url(img/humo2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-bottom: 60px;
 }
 
-/* #form{
+#img-superior {
+  display: none;
+}
 
-    text-align: center;
-    align-items: center;;
-} */
+#container_login_regis {
+  margin-top: 23vh;
+}
+
 .form-control {
   text-align: center;
   justify-content: center;
-}
-
-#footer_login {
-  height: auto;
-  background: rgba(196, 196, 196, 0.2);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 #login {
@@ -9996,10 +9995,82 @@ h3 {
   height: 36px;
 }
 
+#logo_bk {
+  width: 220px;
+  height: 130px;
+}
+
+#logo_bk_celular {
+  display: none;
+}
+
+#logo_cel {
+  width: 250px;
+  height: 400px;
+}
+
+#boy_solo {
+  display: none;
+}
+
+#registro {
+  margin-left: 15vw;
+}
+
+@media only screen and (max-width: 767px) {
+  #registro {
+    margin-left: 0;
+  }
+
+  #caja_cel {
+    display: none;
+  }
+
+  #logo_cel {
+    display: none;
+  }
+
+  #img-superior {
+    display: block;
+    min-width: 100vw;
+    padding: 0;
+  }
+
+  #logo {
+    height: 150px;
+  }
+
+  #logo_bk_celular {
+    display: block;
+  }
+
+  #logo_bk {
+    display: none;
+  }
+
+  #back-color {
+    background-image: none;
+  }
+
+  #container_login_regis {
+    margin-top: 0;
+  }
+
+  #tenn {
+    display: none;
+  }
+
+  #boy_solo {
+    display: block;
+    width: 150px;
+    height: 190px;
+    margin-left: 10vw;
+  }
+}
 #button-login {
   width: 310px;
   height: 50px;
-  background: #BC6FF1;
+  background: #bc6ff1;
   border-radius: 10px;
   transform: rotate(0.12deg);
   border: none;
@@ -10013,18 +10084,30 @@ h3 {
 
 #img-teen {
   height: 200px;
-  margin-bottom: 10vw;
 }
 
 #tenn {
   width: 150px;
-  height: 200px;
-  margin-left: 5vw;
+  height: 160px;
+  margin-left: 10vw;
 }
 
-#logo_bk {
-  width: 200px;
-  height: 130px;
+#footer_login {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  background: rgba(196, 196, 196, 0.2);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-top: 20vh;
+}
+
+.link {
+  color: #000000;
+}
+
+.link:hover {
+  color: #4E0F86;
 }
 
 #barra {
@@ -10043,7 +10126,9 @@ h3 {
   height: 70px;
 }
 
-#dev1, #dev2, #dev3 {
+#dev1,
+#dev2,
+#dev3 {
   text-align: center;
   align-items: center;
 }
@@ -10069,6 +10154,51 @@ h3 {
 
 #textous {
   font-family: "Roboto", sans-serif;
+}
+
+/* CONTACT */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+
+a {
+  text-decoration-line: none;
+  text-decoration: none;
+  text-decoration-color: black;
+}
+
+#contact-container {
+  background-image: url(../src/img/background-contact.jpg);
+  object-fit: cover;
+  height: 100vh;
+}
+
+#contact-col {
+  background-color: #DDB7F8;
+  border-radius: 10px;
+}
+
+#contact-title {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+#contact-btn {
+  color: white;
+  background-color: #4E0F86;
+}
+
+#contact-btn:hover {
+  transform: scale(1.1);
+}
+
+#footer-contact {
+  background-color: #DDB7F8;
 }
 
 /*# sourceMappingURL=main.css.map */

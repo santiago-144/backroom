@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="html_login_regis">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,63 +7,76 @@
   <link rel="stylesheet" href="../main.css">
   <title>Registrate</title>
 </head>
-<body>
-  <div>
-    <div class="container-fluid d-flex">
-      <div class="container-fluid">
+<body class="text-center" id="back-color">
+    <div class="container" id="img-superior">
+        <img src="../img/humo_celular.png" class="img-fluid" alt="">
+</div>
+
+  <div class="container" id="container_login_regis">
+      <div class="container">
+          <div class="row align-items-center">
+              <div class="col-md d-flex justify-content-center" id="registro">
+                  
+                  <form>
+                    <h3 id="login">Regístrate</h3>
+                      <div class="form-group my-3">
+                        <!-- <label for="formGroupExampleInput"></label> -->
+                        <input type="text" class="form-control text-left mx-auto format-login " id="formGroupExampleInput" placeholder="Nombre">
+                      </div>
+                      <div class="form-group my-4">
+                       <!--  <label for="formGroupExampleInput2"></label> -->
+                        <input type="text" class="form-control text-left mx-auto format-login" id="formGroupExampleInput2" placeholder="Nombre de usuario">
+                      </div>
+                      <div class="form-group my-4">
+                        <!--  <label for="formGroupExampleInput2"></label> -->
+                         <input type="email" class="form-control text-left mx-auto format-login" id="formGroupExampleInput2" placeholder="E-mail">
+                       </div>
+                       <div class="form-group my-4">
+                        <!--  <label for="formGroupExampleInput2"></label> -->
+                         <input type="password" class="form-control text-left mx-auto format-login" id="formGroupExampleInput2" placeholder="Contraseña">
+                       </div>
+  
+  
+                      <div class="button mt-4" id="button">
+                          <button class="bt-lg mx-auto" id="button-login">Registrarse</button> 
+                      </div>
+                      <div class="links mt-3">
+                          <a class="mx-auto link" href="Login.html">¿Ya tienes una cuenta? Inicia sesíon</a>
+                      </div>
+  
+                    </form>
+                    
+              </div>
+              <div class="col-md d-flex justify-content-start" id="caja_cel" >
+                <img src="../assets/videos/backroom-gif-unscreen.gif" alt="" class="img-fluid rounded float-right" id="logo_cel">
+            </div>
+               
+  
+          </div>
       </div>
-      <div class="form-group container m-5 p-5 d-flex flex-column ml-auto">
-        <h2 id="registrate" class="mt-5 mb-5">Registrate</h2>
-          <label for="name" class="w-50">Nombre</label>
-          <input
-            type="text"
-            name="name"
-            id="name"
-            class="form-control w-50"
-            placeholder="Nombre" aria-describedby="helpId">
-          <small id="helpId" class="text-muted">Validador</small>
-        <br>
-        <br>
-        <label for="username" class="w-50">Nombre de usuario</label>
-        <input
-          type="text"
-          name="username"
-          id="username"
-          class="form-control w-50"
-          placeholder="Nombre de usuario" aria-describedby="helpId">
-        <small id="helpId" class="text-muted">Validador</small>
-        <br>
-        <br>
-        <label for="name" class="w-50">Email</label>
-        <input
-          type="text"
-          name="email"
-          id="email"
-          class="form-control w-50"
-          placeholder="Email" aria-describedby="helpId">
-        <small id="helpId" class="text-muted">Validador</small>
-        <br>
-        <br>
-        <label for="password" class="w-50">Contraseña</label>
-        <input
-          type="text"
-          name="password"
-          id="password"
-          class="form-control w-50"
-          placeholder="Contraseña" aria-describedby="helpId">
-        <small id="helpId" class="text-muted">Validador</small>
-        <br>
-        <br>
-        <button type="submit" class="btn btn-primary w-25">Submit</button>
-      </div>
-    </div>
-    <div class="container-fluid bg-light" id="footerRegistro">
-      <footer class="container-fluid d-flex pt-5 pb-5">
-        <div class="text-wrap ml-5"><a href="#">¿Que es backroom?</a></div>
-        <div class="text-wrap ml-5"><a href="#">Contacto</a></div>
-        <div class="text-wrap ml-auto"><p>&#169; 2022 Backroom</p></div>
-      </footer>
-    </div>
+      
   </div>
+  
+      <footer class="text-black font-weight-bolder" id="footer_login"> 
+          <div class="container">
+              <div class="row justify-content-start">
+                  <div class="col col-3 col-lg-1">
+                      <a href="Contact.html" class="link">
+                          <p>Contacto</p>  
+                      </a>
+                  </div>
+                  <div class="col col-3 col-lg-1">
+                      <a href="AboutUs.html" class="link">
+                          <p>About Us</p>  
+                      </a>
+                  </div>
+                  <div class="col-6 col-lg-10 text-right">
+                      <p>©️ 2022 Backroom</p>
+                   
+                  </div>
+              </div>
+          </div>
+             
+      </footer>
 </body>
 </html>
