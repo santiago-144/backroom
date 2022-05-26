@@ -10004,11 +10004,32 @@ h3 {
   display: none;
 }
 
+#logo_cel {
+  width: 250px;
+  height: 400px;
+}
+
 #boy_solo {
   display: none;
 }
 
+#registro {
+  margin-left: 15vw;
+}
+
 @media only screen and (max-width: 767px) {
+  #registro {
+    margin-left: 0;
+  }
+
+  #caja_cel {
+    display: none;
+  }
+
+  #logo_cel {
+    display: none;
+  }
+
   #img-superior {
     display: block;
     min-width: 100vw;
