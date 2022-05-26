@@ -1,263 +1,178 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="../main.css">
-    <title>Home</title>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../main.css">
+  <title>bckrm</title>
 </head>
 <body>
+
+  <div class="barra" id="barra">
+    <nav id="row-navbar" class="navbar align-items-center p-3 navbar-expand-m">
+        <div class="col-4 text-left">
+          <a href="#"><img src="../img/Logo-navbar.svg" alt=""></a>
+        </div>
+        <div class="col-4 text-center">
+          <form class="form-inline">
+            <div id="navbar-search-bar" class="input-group">
+              <div class="input-group-prepend">
+                <a href="#" id="navbar-search-bar-icon" class="input-group-text" ><img src= ../img/icon-search.svg" alt=""></a>
+              </div>
+              <input  type="text" class="form-control" placeholder="Search..." >
+            </div>
+          </form>
+        </div>
+        <div class="col-4 text-right">
+          <a href="#"><img src="../img/chat-right-dots.svg" alt=""></a>
+          <a href="#"><img src="../img/icon-start.svg" alt=""></a>
+          <a href="#"><img src="../img/icon-flame.svg" alt=""></a>
+          <a href="#"><img src="../img/icon-hamburger.svg" alt=""></a>
+        </div>
+      </nav>
+</div>
+
+<nav class="nav-res-cel ">
+  <div class="flex-container">
+    <ul class="nav justify-content-center">
+      <li class="nav-item mr-5">
+        <a class="nav-link active" href="#">
+          <img src="..img/Logo-navbar.svg" alt="">
+        </a>
+      </li>
+      <li class="nav-item p-1 ml-5">
+        <a class="nav-link disabled">
+            <img src="../img/icon-user.svg" alt="">
+        </a>
+      </li>
+    </ul>
+  </div>
+  
+</nav>
+
+<div class="container"></div>
+
+<div class="container">
+
+  <div class="row text-center">
+    <div class="col">
+      <p>Friends</p>
+    </div>
   
   
-  <!-- Navbar -->
-  <div class="container">
-    <nav id="row-navbar" class="navbar navbar-expand-lg align-items-center">
-      <div class="col-4 text-left">
-        <a href="#"><img src="../img/Logo-navbar.svg" alt=""></a>
-        <a href="#"><img src="../img/Home.svg" alt=""></a>
-      </div>
-      <div id="container-searchbar" class="col-4 text-center">
-        <form id="search-bar" class="">
-          <button type="submit"><img src="../img/icon-search.svg"></button>            
-          <input  type="text" class="" placeholder="" >
-        </form>
-      </div>
-      <div class="col-4 text-right">
-        <a href="#"><img src="../img/icon-notifications.svg" alt=""></a>
-        <a href="#"><img src="../img/icon-user.svg" alt=""></a>
-        <a href="#"><img src="../img/icon-hamburger.svg" alt=""></a>
-      </div>
-    </nav>
-  <div>
+  <div class="col">
+    <p>Inspirations</p>
+  </div>
+</div>
   
-  <!--  -->
-  <div class="container d-flex">
-    <div class="col-8">
+</div>
 
-      <!-- Stories -->
-      <div class="m-5">
-        <div id="carouselExampleControlsNoTouching" class="carousel slide text-center" data-touch="false" data-interval="false">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <a href=""><img src="../img/Stories1.png" alt=""></a>
-              <a href=""><img src="../img/Stories2.png" alt=""></a>
-              <a href=""><img src="../img/Stories3.png" alt=""></a>
-              <a href=""><img src="../img/Stories4.png" alt=""></a>
-              <a href=""><img src="../img/Stories5.png" alt=""></a>
-              <a href=""><img src="../img/Stories6.png" alt=""></a>
-              <a href=""><img src="../img/Stories7.png" alt=""></a>
-              <a href=""><img src="../img/Stories8.png" alt=""></a>
-              <a href=""><img src="../img/Stories9.png" alt=""></a>
-            </div>
-            <div class="carousel-item">
-              <a href=""><img src="../img/Stories1.png" alt=""></a>
-              <a href=""><img src="../img/Stories2.png" alt=""></a>
-              <a href=""><img src="../img/Stories3.png" alt=""></a>
-              <a href=""><img src="../img/Stories4.png" alt=""></a>
-              <a href=""><img src="../img/Stories5.png" alt=""></a>
-              <a href=""><img src="../img/Stories6.png" alt=""></a>
-              <a href=""><img src="../img/Stories7.png" alt=""></a>
-              <a href=""><img src="../img/Stories8.png" alt=""></a>
-              <a href=""><img src="../img/Stories9.png" alt=""></a>
-            </div>
-            <div class="carousel-item">
-              <a href=""><img src="../img/Stories1.png" alt=""></a>
-              <a href=""><img src="../img/Stories2.png" alt=""></a>
-              <a href=""><img src="../img/Stories3.png" alt=""></a>
-              <a href=""><img src="../img/Stories4.png" alt=""></a>
-              <a href=""><img src="../img/Stories5.png" alt=""></a>
-              <a href=""><img src="../img/Stories6.png" alt=""></a>
-              <a href=""><img src="../img/Stories7.png" alt=""></a>
-              <a href=""><img src="../img/Stories8.png" alt=""></a>
-              <a href=""><img src="../img/Stories9.png" alt=""></a>
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-target="#carouselExampleControlsNoTouching" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-target="#carouselExampleControlsNoTouching" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </button>
-        </div>
-      </div>
 
-      <!-- Publicaciones -->
-      <div>
-        <div class="card m-5">
-          <div class="card-header">
-            <img class="img-fluid" id="card-usuario-img" src="../img/Stories10.png" alt=""><span>Usuario</span>
-          </div>
-          <div class="card-body">
-            <img class="img-fluid" src="../img/publication1.jpg" alt="">
-            <div class=" d-flex justify-content-between mt-2">
-              <div>
-                <a href="#"><img class="card-icons" src="../img/icon-flame.svg" alt=""></a>
-                <a href="#"><img class="card-icons" src="../img/icon-comment.svg" alt=""></a>
-              </div>
-              <div class="">
-                <a href="#"><img class="card-icons" src="../img/icon-start.svg" alt=""></a>
-                <a href="#"><img class="card-icons" src="../img/icon-saved.svg" alt=""></a>
-              </div>
-            </div>
-            <div class="d-flex">
-              <h5 class="card-title inline">@Usuario</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ipsa magnam illo, consequatur quidem illum qui delectus quas aperiam optio totam officiis obcaecati dolorem repudiandae ipsum libero perspiciatis porro repellendus neque reprehenderit culpa corrupti quam.</p>
-            </div>
-          </div>
-        </div>
-        <div class="card m-5">
-          <div class="card-header">
-            <img class="img-fluid" id="card-usuario-img" src="../img/Stories10.png" alt=""><span>Usuario</span>
-          </div>
-          <div class="card-body">
-            <img class="img-fluid" src="../img/publication2.jpg" alt="">
-            <div class=" d-flex justify-content-between mt-2">
-              <div>
-                <a href="#"><img class="card-icons" src="../img/icon-flame.svg" alt=""></a>
-                <a href="#"><img class="card-icons" src="../img/icon-comment.svg" alt=""></a>
-              </div>
-              <div class="">
-                <a href="#"><img class="card-icons" src="../img/icon-start.svg" alt=""></a>
-                <a href="#"><img class="card-icons" src="../img/icon-saved.svg" alt=""></a>
-              </div>
-            </div>
-            <div class="d-flex">
-              <h5 class="card-title inline">@Usuario</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ipsa magnam illo, consequatur quidem illum qui delectus quas aperiam optio totam officiis obcaecati dolorem repudiandae ipsum libero perspiciatis porro repellendus neque reprehenderit culpa corrupti quam.</p>
-            </div>
-          </div>
-        </div>
-        <div class="card m-5">
-          <div class="card-header">
-            <img class="img-fluid" id="card-usuario-img" src="../img/Stories10.png" alt=""><span>Usuario</span>
-          </div>
-          <div class="card-body">
-            <img class="img-fluid" src="../img/publication3.jpg" alt="">
-            <div class=" d-flex justify-content-between mt-2">
-              <div>
-                <a href="#"><img class="card-icons" src="../img/icon-flame.svg" alt=""></a>
-                <a href="#"><img class="card-icons" src="../img/icon-comment.svg" alt=""></a>
-              </div>
-              <div class="">
-                <a href="#"><img class="card-icons" src="../img/icon-start.svg" alt=""></a>
-                <a href="#"><img class="card-icons" src="../img/icon-saved.svg" alt=""></a>
-              </div>
-            </div>
-            <div class="d-flex">
-              <h5 class="card-title inline">@Usuario</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ipsa magnam illo, consequatur quidem illum qui delectus quas aperiam optio totam officiis obcaecati dolorem repudiandae ipsum libero perspiciatis porro repellendus neque reprehenderit culpa corrupti quam.</p>
-            </div>
-          </div>
-        </div>
-        <div class="card m-5">
-          <div class="card-header">
-            <img class="img-fluid" id="card-usuario-img" src="../img/Stories10.png" alt=""><span>Usuario</span>
-          </div>
-          <div class="card-body">
-            <img class="img-fluid" src="../img/publication4.jpg" alt="">
-            <div class=" d-flex justify-content-between mt-2">
-              <div>
-                <a href="#"><img class="card-icons" src="../img/icon-flame.svg" alt=""></a>
-                <a href="#"><img class="card-icons" src="../img/icon-comment.svg" alt=""></a>
-              </div>
-              <div class="">
-                <a href="#"><img class="card-icons" src="../img/icon-start.svg" alt=""></a>
-                <a href="#"><img class="card-icons" src="../img/icon-saved.svg" alt=""></a>
-              </div>
-            </div>
-            <div class="d-flex">
-              <h5 class="card-title inline">@Usuario</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ipsa magnam illo, consequatur quidem illum qui delectus quas aperiam optio totam officiis obcaecati dolorem repudiandae ipsum libero perspiciatis porro repellendus neque reprehenderit culpa corrupti quam.</p>
-            </div>
-          </div>
-        </div>
-        <div class="card m-5">
-          <div class="card-header">
-            <img class="img-fluid" id="card-usuario-img" src="../img/Stories10.png" alt=""><span>Usuario</span>
-          </div>
-          <div class="card-body">
-            <img class="img-fluid" src="../img/publication5.jpg" alt="">
-            <div class=" d-flex justify-content-between mt-2">
-              <div>
-                <a href="#"><img class="card-icons" src="../img/icon-flame.svg" alt=""></a>
-                <a href="#"><img class="card-icons" src="../img/icon-comment.svg" alt=""></a>
-              </div>
-              <div class="">
-                <a href="#"><img class="card-icons" src="../img/icon-start.svg" alt=""></a>
-                <a href="#"><img class="card-icons" src="../img/icon-saved.svg" alt=""></a>
-              </div>
-            </div>
-            <div class="d-flex">
-              <h5 class="card-title inline">@Usuario</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ipsa magnam illo, consequatur quidem illum qui delectus quas aperiam optio totam officiis obcaecati dolorem repudiandae ipsum libero perspiciatis porro repellendus neque reprehenderit culpa corrupti quam.</p>
-            </div>
-          </div>
-        </div>
-        
+<div class="container">
 
+
+<div class="row row-cols-1 row-cols-md-4">
+
+    <div class="col mb-4">
+      <div class="card">
+        <img src="../img/img-home/man 1.jpg" class="card-img-top img-fluid" alt="...">
       </div>
     </div>
 
-
-    <!-------------------  Barra Lateral   --------------------->
-    <div class="col-4 sticky-top text-center m-5">
-      
-      <div class="mb-5">
-        <img src="../img/sugerencia.png" alt="">
-        <h5>Usuario</h5>
-        <p>Description</p>
-        <button type="button" id="btn-aside-profile" class="btn btn-outline-primary">Primary</button>
-        
-      </div>
-
-      <div class="d-flex mt-1">
-        <div>
-          <img class="aside-profile-img" src="../img/sugerencia1.png" alt="">
-        </div>
-        <div>
-          <h5>Usuario</h5>
-          <p>Description</p>
-          <button type="button" id="btn-aside-profile" class="btn btn-outline-primary">Follow</button>
-        </div>
-      </div>
-
-      <div class="d-flex mt-1">
-        <div>
-          <img class="aside-profile-img" src="../img/sugerencia2.png" alt="">
-        </div>
-        <div>
-          <h5>Usuario</h5>
-          <p>Description</p>
-          <button type="button" id="btn-aside-profile" class="btn btn-outline-primary">Follow</button>
-        </div>
-      </div>
-
-      <div class="d-flex mt-1">
-        <div>
-          <img class="aside-profile-img" src="../img/sugerencia3.png" alt="">
-        </div>
-        <div>
-          <h5>Usuario</h5>
-          <p>Description</p>
-          <button type="button" id="btn-aside-profile" class="btn btn-outline-primary">Follow</button>
-        </div>
-      </div>
-
-      <div class="d-flex mt-1">
-        <div>
-          <img class="aside-profile-img" src="../img/sugerencia4.png" alt="">
-        </div>
-        <div>
-          <h5>Usuario</h5>
-          <p>Description</p>
-          <button type="button" id="btn-aside-profile" class="btn btn-outline-primary">Follow</button>
-        </div>
-      </div>
+  <div class="col mb-4">
+    <div class="card">
+      <img src="../img/img-home/woman 1.jpg" class="card-img-top" alt="...">
     </div>
   </div>
 
-  </body>
+  <div class="col mb-4">
+    <div class="card">
+      <img src="../img/img-home/man 2.jpg" class="card-img-top" alt="...">
+    </div>
+  </div>
+
+  <div class="col mb-4">
+    <div class="card">
+      <img src="../img/img-home/woman 2.jpg" class="card-img-top" alt="...">
+    </div>
+  </div>
+
+  <div class="col mb-4">
+    <div class="card">
+      <img src="../img/img-home/man 4.jpg" class="card-img-top" alt="...">
+    </div>
+  </div>
+
+  <div class="col mb-4">
+    <div class="card">
+      <img src="../img/img-home/woman 3.jpg" class="card-img-top" alt="...">
+    </div>
+  </div>
+
+  <div class="col mb-4">
+    <div class="card">
+      <img src="../img/img-home/man 3.jpg" class="card-img-top" alt="..."> 
+    </div>
+  </div>
+
+  <div class="col mb-4">
+    <div class="card">
+      <img src="../img/img-home/woman 4.jpg" class="card-img-top" alt="...">
+    </div>
+  </div>
+
+
+</div>
+
+<div class="col">
+  <ul class="list-group">
+    
+    <li class="list-group-item"><img src="../img/img-home/woman 5.jpg" class="card-img-top" alt="..."></li>
+    <li class="list-group-item"><img src="../img/img-home/woman 6.jpg" class="card-img-top" alt="..."></li>
+    <li class="list-group-item"><img src="../img/img-home/woman 7.jpg" class="card-img-top" alt="..."></li>
+    <li class="list-group-item"><img src="../img/img-home/woman 8.jpg" class="card-img-top" alt="..."></li>
+    <li class="list-group-item"><img src="../img/img-home/twins 1.jpg" class="card-img-top" alt="..."></li>
+  </ul>
+</div>
+
+
+</div>
+
+  
+
+
+//////////////////////////////////////////////////////
+<footer>
+  <div class="barra-res" id="barra-res">
+      <ul class="nav justify-content-center">
+        
+            <li class="nav-item m-2">
+              <a class="nav-link active" href="#">
+                  <img src="..img/icon-search.svg" alt="">
+              </a>
+            </li>
+          <li class="nav-item m-2">
+              <a class="nav-link active" href="#">
+                  <img src="../img/chat-right-dots.svg" alt="">
+              </a>
+            </li>
+          <li class="nav-item m-2">
+            <a class="nav-link" href="#">
+              <img src="../img/icon-start.svg" alt="">
+            </a>
+          </li>
+          <li class="nav-item m-2">
+            <a class="nav-link" href="#">
+              <img src="..img/icon-flame.svg" alt="">
+            </a>
+          </li>
+        
+        </ul>
+  </div>
+  
+  
+  </footer>
+
+</body>
 </html>
