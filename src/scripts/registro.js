@@ -29,7 +29,7 @@ inputs.forEach((input) => {
                     nameError.textContent = ''
                 } else {
                     statusInfo.name = false
-                    nameError.textContent = 'Nombre invalido'
+                    nameError.textContent = 'Sólo se aceptan letras'
                 }
                 break
             case 'usuario':
@@ -38,7 +38,7 @@ inputs.forEach((input) => {
                     userError.textContent = ''
                 } else {
                     statusInfo.user = false
-                    userError.textContent = 'Usuario invalido'
+                     userError.textContent = 'Usuario invalido'
                 }
                 break
             case 'contrasenia':
