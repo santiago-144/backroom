@@ -115,6 +115,14 @@
   }
 //login
 //About us
+/* #barra {
+  border: 3px solid rgba(83, 82, 82, 0.363);
+  border-radius: 10px;
+  border-top: none;
+  text-align: center;
+  align-items: center;
+ justify-content: center;
+} */
 
 #feet {
   justify-content: center;
@@ -201,7 +209,7 @@ a {
 //contact
 //navbaresponsiva home
 @media only screen and (max-width: 425px){
-  #barra{
+  #nbarra{
       display: none;
   }
 }
