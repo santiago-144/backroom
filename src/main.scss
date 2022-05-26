@@ -121,4 +121,19 @@ text-shadow: 0px 7px 4px rgba(0, 0, 0, 0.25);
 
 //Home
 
+@media only screen and (max-width: 425px){
+    #barra{
+        display: none;
+    }
+}
 
+@media only screen and (min-width: 426px){
+
+    .nav-res-cel{
+        display: none;   
+    }
+
+    .barra-res{
+        display: none;
+    }
+}

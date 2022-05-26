@@ -8,12 +8,47 @@
   <title>bckrm</title>
 </head>
 <body>
-  <!-- Image and text -->
-<nav class="navbar navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">
-    <img src="../img/img-home/bckrms.png" width="30" height="30" class="d-inline-block align-top" alt="">
-    Bootstrap
-  </a>
+
+  <div class="barra" id="barra">
+    <nav id="row-navbar" class="navbar align-items-center p-3 navbar-expand-m">
+        <div class="col-4 text-left">
+          <a href="#"><img src="../img/Logo-navbar.svg" alt=""></a>
+        </div>
+        <div class="col-4 text-center">
+          <form class="form-inline">
+            <div id="navbar-search-bar" class="input-group">
+              <div class="input-group-prepend">
+                <a href="#" id="navbar-search-bar-icon" class="input-group-text" ><img src= ../img/icon-search.svg" alt=""></a>
+              </div>
+              <input  type="text" class="form-control" placeholder="Search..." >
+            </div>
+          </form>
+        </div>
+        <div class="col-4 text-right">
+          <a href="#"><img src="../img/chat-right-dots.svg" alt=""></a>
+          <a href="#"><img src="../img/icon-start.svg" alt=""></a>
+          <a href="#"><img src="../img/icon-flame.svg" alt=""></a>
+          <a href="#"><img src="../img/icon-hamburger.svg" alt=""></a>
+        </div>
+      </nav>
+</div>
+
+<nav class="nav-res-cel ">
+  <div class="flex-container">
+    <ul class="nav justify-content-center">
+      <li class="nav-item mr-5">
+        <a class="nav-link active" href="#">
+          <img src="..img/Logo-navbar.svg" alt="">
+        </a>
+      </li>
+      <li class="nav-item p-1 ml-5">
+        <a class="nav-link disabled">
+            <img src="../img/icon-user.svg" alt="">
+        </a>
+      </li>
+    </ul>
+  </div>
+  
 </nav>
 
 <div class="container"></div>
@@ -107,8 +142,37 @@
   
 
 
-
-
+//////////////////////////////////////////////////////
+<footer>
+  <div class="barra-res" id="barra-res">
+      <ul class="nav justify-content-center">
+        
+            <li class="nav-item m-2">
+              <a class="nav-link active" href="#">
+                  <img src="..img/icon-search.svg" alt="">
+              </a>
+            </li>
+          <li class="nav-item m-2">
+              <a class="nav-link active" href="#">
+                  <img src="../img/chat-right-dots.svg" alt="">
+              </a>
+            </li>
+          <li class="nav-item m-2">
+            <a class="nav-link" href="#">
+              <img src="../img/icon-start.svg" alt="">
+            </a>
+          </li>
+          <li class="nav-item m-2">
+            <a class="nav-link" href="#">
+              <img src="..img/icon-flame.svg" alt="">
+            </a>
+          </li>
+        
+        </ul>
+  </div>
+  
+  
+  </footer>
 
 </body>
 </html>
