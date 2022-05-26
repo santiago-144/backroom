@@ -9965,6 +9965,10 @@ h3 {
   margin-bottom: 60px;
 }
 
+#img-superior {
+  display: none;
+}
+
 #container_login_regis {
   margin-top: 23vh;
 }
@@ -10000,11 +10004,38 @@ h3 {
   display: none;
 }
 
+#logo_cel {
+  width: 250px;
+  height: 400px;
+}
+
 #boy_solo {
   display: none;
 }
 
+#registro {
+  margin-left: 15vw;
+}
+
 @media only screen and (max-width: 767px) {
+  #registro {
+    margin-left: 0;
+  }
+
+  #caja_cel {
+    display: none;
+  }
+
+  #logo_cel {
+    display: none;
+  }
+
+  #img-superior {
+    display: block;
+    min-width: 100vw;
+    padding: 0;
+  }
+
   #logo {
     height: 150px;
   }
@@ -10018,15 +10049,11 @@ h3 {
   }
 
   #back-color {
-    background-image: url(img/humo_celular.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center 0;
-    margin-bottom: 60px;
+    background-image: none;
   }
 
   #container_login_regis {
-    margin-top: 10vh;
+    margin-top: 0;
   }
 
   #tenn {
@@ -10073,6 +10100,14 @@ h3 {
   background: rgba(196, 196, 196, 0.2);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin-top: 20vh;
+}
+
+.link {
+  color: #000000;
+}
+
+.link:hover {
+  color: #4E0F86;
 }
 
 #barra {
