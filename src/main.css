@@ -10075,15 +10075,6 @@ h3 {
   margin-top: 20vh;
 }
 
-#barra {
-  border: 3px solid rgba(83, 82, 82, 0.363);
-  border-radius: 10px;
-  border-top: none;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-}
-
 #feet {
   justify-content: center;
   margin-top: 15vh;
@@ -10139,7 +10130,7 @@ a {
 #contact-container {
   background-image: url(../src/img/background-contact.jpg);
   object-fit: cover;
-  height: 100vh;
+  height: 700px;
 }
 
 #contact-col {
@@ -10162,8 +10153,24 @@ a {
   transform: scale(1.1);
 }
 
-#footer-contact {
+#feetContacto {
   background-color: #DDB7F8;
+  margin: none;
+}
+
+@media only screen and (max-width: 425px) {
+  #barra {
+    display: none;
+  }
+}
+@media only screen and (min-width: 426px) {
+  .nav-res-cel {
+    display: none;
+  }
+
+  .barra-res {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
