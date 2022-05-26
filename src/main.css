@@ -10014,7 +10014,7 @@ h3 {
 }
 
 #registro {
-  margin-left: 15vw;
+  margin-left: 19vw;
 }
 
 @media only screen and (max-width: 767px) {
@@ -10199,6 +10199,21 @@ a {
 
 #footer-contact {
   background-color: #DDB7F8;
+}
+
+@media only screen and (max-width: 425px) {
+  #barra {
+    display: none;
+  }
+}
+@media only screen and (min-width: 426px) {
+  .nav-res-cel {
+    display: none;
+  }
+
+  .barra-res {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
