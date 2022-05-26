@@ -233,3 +233,22 @@ a {
 }
 //contact
 
+
+//Home
+
+@media only screen and (max-width: 425px){
+    #barra{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 426px){
+
+    .nav-res-cel{
+        display: none;   
+    }
+
+    .barra-res{
+        display: none;
+    }
+}
