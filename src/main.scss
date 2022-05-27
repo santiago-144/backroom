@@ -192,8 +192,14 @@
   padding: 0;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
+ 
 }
 
+#footer-contac{
+  margin-bottom: 20px;
+
+  
+}
 a {
   text-decoration-line:none;
   text-decoration: none;
@@ -203,13 +209,17 @@ a {
 #contact-container {
   background-image: url(../src/img/background-contact.jpg);
   object-fit: cover;
-  height: 100vh;
+  background-size: cover;
+  
+ 
 
 }
 
 #contact-col {
   background-color: #DDB7F8;
-  border-radius: 10px;
+  border-radius: 15px;
+  width: 400px;
+  
 }
 #contact-title{
   font-size: 20px;
@@ -226,10 +236,69 @@ a {
 #contact-btn:hover{
   transform: scale(1.1);
 }
-
+#link-login:hover{
+  transform: scale(1.2);
+  background-color:hsl(275, 82%, 85%,0.2);
+}
 
 #feetContacto {
+  position: absolute;
+    bottom: 0;
+    width: 100%;
+    height:auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background-color: #DDB7F8;
+}
+#validationCustom02{
+  background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), #FFFFFF;
+border-radius: 10px;
+}
+#img-teen-contact{
+  display: none;
+}
+@media only screen and (max-width:767px){
+  #contact-container {
+    background-image:none;
+    margin-top: 10vh;
+  }
+  #contact-col {
+    background-color: #DDB7F8;
+    width: 400px;
+    background: rgba(188, 111, 241, 0.5);
+    border-radius: 70px 0px;
+    
+  }
+  #img-superior{
+    display: block;
+    min-width: 100vw;
+    padding: 0;
+    }
+  #link-login{
+    display: none;
+  }
+  #logo-contac{
+    display: none;
+  }
+  #logo-nav{
+    position: absolute;
+    top: 10px;
+    left: -60px;
+  }
+  #logo-nav:hover{
+    transform: scale(1.2);
+  }
+  #img-teen-contac{
+    display: block;
+    height: 200px;
+    margin-bottom: 10vh;
+  }
+  @media only screen and (max-width:550px){
+    #logo-nav{
+      position: absolute;
+      top: 10px;
+      left: -80px;
+    }
+  }
 }
 //contact
 
