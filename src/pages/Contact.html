@@ -1,76 +1,109 @@
-<!doctype html>
-<html lang="es">
+<!Doctype html>
+<html lang="es"id="html_login_regis">
 <head>
-  <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="shortcut icon" href="assets/icon/Logo-navbar.svg" type="image/x-icon">
   <link rel="stylesheet" href="../main.css">
   <title>Contacto</title>
 </head>
-<body>
-  <div id="contact-container" class="container">
-    <nav class="nav-about-contac">
+<body id="footer-contac">
+  <div class="container" id="img-superior">
+    <img src="../img/humo_celular.png" class="img-fluid" alt="">
+    <a class="nav-link active align-items-center" href="Login.html" id="logo-nav">
+      <img src="../img/logo_bk_celular.png" alt="" class="img-fluid">
+    </a>
+</div>
+  <div id="contact-container" class="container ">
+    <nav class="nav-about-contac" id="logo-contac">
       <div class="flex-container">
         <ul class="nav justify-content-center">
           <li class="nav-item">
-            <a class="nav-link active" href="Login.html">
-              <img src="../img/Logo-navbar.svg" alt="">
+            <a class="nav-link active align-items-center" href="Login.html" id="link-login">
+              <img src="../img/logo_bk_celular.png" alt="" class="img-fluid">
             </a>
           </li>
         </ul>
       </div>
-      
     </nav>
-      <div class="m-0 vh-103 row justify-content-center align-items-center width-90">
-        <div id="contact-col" class="col-auto p-5 ">
-          <p id="contact-title">Brindanos tu opinión</p>
+
+      <div class=" mt-0 m-2 pb-5 row justify-content-center align-items-center width-100">
+        <div id="contact-col" class="col-auto p-4 ">
+
           <form id="contact-form" action="">
-            <div>
+            <p class="mb-0" id="contact-title">Brindanos tu <br> opinión</p>
+            <div class="form-group ">
               <label for="validationCustom02">Nombre</label>
-              <input type="text" class="form-control" id="validationCustom02" value="" required>
+              <input type="text" class="form-control" name="nombre" id="validationCustom02" value="" required><!-- Se agregó la etiqueta "nombre" -->
+              <!-- Etiqueta de validación -->
+              <div class="container" style="height: 3vh;">
+                <label class="msj-error" id="name-error">Nombre</label>
+              </div>
             </div>
-            <div>
+            <div class="form-group ">
               <label for="validationCustom02">Apellido</label>
-              <input type="text" class="form-control" id="validationCustom02" value="" required>
+              <input type="text" class="form-control" name="apellido" id="validationCustom02" value="" required><!-- Se agregó la etiqueta "apellido" -->
+              <!-- Etiqueta de validación -->
+              <div class="container" style="height: 3vh;">
+                <label class="msj-error" id="lastname-error"></label>
+              </div>
             </div>
-            <div>
+            <div class="form-group ">
               <label for="validationCustom02">Número Telefonico</label>
-              <input type="text" class="form-control" id="validationCustom02" value="" required>
+              <input type="text" class="form-control" name="telefono" id="validationCustom02" value="" required><!-- Se agregó la etiqueta "telefono" -->
+              <!-- Etiqueta de validación -->
+              <div class="container" style="height: 3vh;">
+                <label class="msj-error" id="phone-error"></label>
+              </div>
             </div>
-            <div>
+            <div class="form-group ">
               <label for="validationCustom02">E-mail</label>
-              <input type="email" class="form-control" id="validationCustom02" value="" required>
+              <input type="email" class="form-control" name="email" id="validationCustom02" value="" required><!-- Se agregó la etiqueta "email" -->
+              <!-- Etiqueta de validación -->
+              <div class="container" style="height: 3vh;">
+                <label class="msj-error" id="email-error"></label>
+              </div>
             </div>
-            <div>
-              <label for="validationCustom02">Opinión</label>
-              <input type="text" class="form-control" id="validationCustom02" value="" required>
+            <div class="form-group ">
+              <label for="opinion">Opinión</label>
+              <textarea class="form-control" id="opinion" rows="3"></textarea>
             </div>
-            <div class="container d-flex justify-content-end">
-              <button id="contact-btn" class="btn mt-4" type="submit">Enviar</button>
+            <div class=" d-flex justify-content-end form-group">
+              <button id="contact-btn" class="btn " type="submit">Enviar</button>
             </div>
           </form>
         </div>
       </div>
 
+      <div class="row" id="img-teen-contac">
+        <div class="col">
+                <img src="../img/boy_solo.png" alt="" id="boy_solo" class="img-fluid mx-auto">
+
+            
+        </div>
+    </div>
+
   </div>
-  <footer class="text-black font-weight-bolder text-center mt-0" id="feetContacto">
+  <footer class="text-black font-weight-bolder text-center " id="feetContacto">
     <div class="container" >
         <div class="row" id="textous">
             <div class="col text-left">
-                <a href="../pages/AboutUs.html" target="blank">
-                    <p class="m-0 p-4">¿Que es backroom? </p> 
+                <a href="../pages/AboutUs.html" target="blank" class="link" >
+                    <p class="m-0 p-3">¿Que es backroom? </p> 
                 </a>
             </div>
             <br>
             <div class="col text-right">
-                <p class="m-0 p-4">©️ 2022 Backroom.</p>
+
+
+
+                <p class="m-0 p-3">©️ 2022 Backroom.</p>
              
+
             </div>
         </div>
     </div>
-       
-</footer> 
-
+</footer>
+<script src="../scripts/contacto.js"></script>
 </body>
 </html>
