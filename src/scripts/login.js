@@ -30,7 +30,5 @@ inputs.forEach((input) => {
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
-    const terms = document.querySelector('#terminos').checked;
-    console.log(terms);
     Object.values(statusInfo).includes(false) ? alert('Existen campos vacíos'): alert('Todos los campos son validos'); 
 });
