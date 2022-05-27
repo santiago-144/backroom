@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="shortcut icon" href="assets/icon/Logo-navbar.svg" type="image/x-icon">
@@ -20,7 +19,6 @@
           </li>
         </ul>
       </div>
-      
     </nav>
       <div class="m-0 vh-100 row justify-content-center align-items-center width-100">
         <div id="contact-col" class="col-auto p-5 ">
@@ -28,19 +26,35 @@
           <form id="contact-form" action="">
             <div>
               <label for="validationCustom02">Nombre</label>
-              <input type="text" class="form-control" id="validationCustom02" value="" required>
+              <input type="text" class="form-control" name="nombre" id="validationCustom02" value="" required><!-- Se agregó la etiqueta "nombre" -->
+              <!-- Etiqueta de validación -->
+              <div class="container" style="height: 3vh;">
+                <label class="msj-error" id="name-error">Hola</label>
+              </div>
             </div>
             <div>
               <label for="validationCustom02">Apellido</label>
-              <input type="text" class="form-control" id="validationCustom02" value="" required>
+              <input type="text" class="form-control" name="apellido" id="validationCustom02" value="" required><!-- Se agregó la etiqueta "apellido" -->
+              <!-- Etiqueta de validación -->
+              <div class="container" style="height: 3vh;">
+                <label class="msj-error" id="lastname-error"></label>
+              </div>
             </div>
             <div>
               <label for="validationCustom02">Número Telefonico</label>
-              <input type="text" class="form-control" id="validationCustom02" value="" required>
+              <input type="text" class="form-control" name="telefono" id="validationCustom02" value="" required><!-- Se agregó la etiqueta "telefono" -->
+              <!-- Etiqueta de validación -->
+              <div class="container" style="height: 3vh;">
+                <label class="msj-error" id="phone-error"></label>
+              </div>
             </div>
             <div>
               <label for="validationCustom02">E-mail</label>
-              <input type="email" class="form-control" id="validationCustom02" value="" required>
+              <input type="email" class="form-control" name="email" id="validationCustom02" value="" required><!-- Se agregó la etiqueta "email" -->
+              <!-- Etiqueta de validación -->
+              <div class="container" style="height: 3vh;">
+                <label class="msj-error" id="email-error"></label>
+              </div>
             </div>
             <div>
               <label for="validationCustom02">Opinión</label>
@@ -52,7 +66,6 @@
           </form>
         </div>
       </div>
-
   </div>
   <footer class="text-black font-weight-bolder text-center mt-0" id="feetContacto">
     <div class="container" >
@@ -65,12 +78,10 @@
             <br>
             <div class="col text-right">
                 <p class="m-0 p-4">©️ 2022 Backroom.</p>
-             
             </div>
         </div>
     </div>
-       
-</footer> 
-
+</footer>
+<script src="../scripts/contacto.js"></script>
 </body>
 </html>
