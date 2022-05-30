@@ -174,12 +174,21 @@
 #img-perfil {
   height: 120px;
   width: 120px;
+  margin-bottom: 10px;
 }
 #medios {
   text-align: center;
 }
 #textous {
   font-family: "Roboto", sans-serif;
+}
+#link-about:hover{
+  transform: scale(1.2);
+  background-color:hsl(275, 82%, 85%,0.2);
+  border-radius: 15px;
+}
+#imagenes-contactol:hover,#imagenes-contactog:hover{
+  transform: scale(1.5);
 }
 //About us
 //Contact
@@ -194,11 +203,8 @@
   font-size: 14px;
  
 }
-
 #footer-contac{
-  margin-bottom: 20px;
-
-  
+  margin-bottom: 20px;  
 }
 a {
   text-decoration-line:none;
@@ -226,21 +232,19 @@ a {
   font-weight:600;
   text-align: center;
 }
-
 #contact-btn{
   
   color: white;
   background-color: #4E0F86;
 }
-
 #contact-btn:hover{
   transform: scale(1.1);
 }
 #link-login:hover{
   transform: scale(1.2);
   background-color:hsl(275, 82%, 85%,0.2);
+  border-radius: 15px;
 }
-
 #feetContacto {
   position: absolute;
     bottom: 0;
