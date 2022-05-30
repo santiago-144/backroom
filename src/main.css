@@ -10146,6 +10146,7 @@ h3 {
 #img-perfil {
   height: 120px;
   width: 120px;
+  margin-bottom: 10px;
 }
 
 #medios {
@@ -10154,6 +10155,16 @@ h3 {
 
 #textous {
   font-family: "Roboto", sans-serif;
+}
+
+#link-about:hover {
+  transform: scale(1.2);
+  background-color: hsla(275deg, 82%, 85%, 0.2);
+  border-radius: 15px;
+}
+
+#imagenes-contactol:hover, #imagenes-contactog:hover {
+  transform: scale(1.5);
 }
 
 /* CONTACT */
@@ -10205,6 +10216,7 @@ a {
 #link-login:hover {
   transform: scale(1.2);
   background-color: hsla(275deg, 82%, 85%, 0.2);
+  border-radius: 15px;
 }
 
 #feetContacto {
