@@ -15,24 +15,34 @@ a {
   text-decoration-color:black;
 }
 
-#contact-container {
-  background-image:url(assets/img/background-contact.jpg);
-  object-fit: cover;
-  height: 100vh;
+*/ HOME */
+
+a>img{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
 }
 
-#contact-col {
-  background-color: #DDB7F8;
-  border-radius: 10px;
-}
-#contact-title{
-  font-size: 20px;
-  font-weight:600;
-  text-align: center;
+
+#card-usuario-img{
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
 }
 
-#contact-btn{
-  
-  color: white;
+.card-icons:hover{
+  transform: scale(1.3);
+}
+
+#btn-aside-profile:hover{
   background-color: #4E0F86;
+  border: solid #4E0F86;
+}
+
+
+.aside-profile-img{
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  margin-bottom: 30px;
 }
