@@ -28,6 +28,9 @@ inputs.forEach((input) => {
                 } else {
                     statusInfo.name = false
                     nameError.textContent = 'Sólo se aceptan letras'
+                    setTimeout(() =>{
+                        nameError.textContent = ' ';
+                    },3000);
                 }
                 break
             case 'apellido':
@@ -37,6 +40,9 @@ inputs.forEach((input) => {
                 } else {
                     statusInfo.name = false
                     lastnameError.textContent = 'Solo se aceptan letras'
+                    setTimeout(() =>{
+                        lastnameError.textContent = ' ';
+                    },3000);
                 }
                 break
             case 'telefono':
@@ -45,7 +51,10 @@ inputs.forEach((input) => {
                     phoneError.textContent = ''
                 } else {
                     statusInfo.phone = false
-                    phoneError.textContent = 'Solo se aceptan números'
+                    phoneError.textContent = 'Telefono no valido'
+                    setTimeout(() =>{
+                        phoneError.textContent = ' ';
+                    },3000);
                 }
                 break
             case 'email':
@@ -55,6 +64,9 @@ inputs.forEach((input) => {
                 } else {
                     statusInfo.email = false
                     emailError.textContent = 'Email invalido'
+                    setTimeout(() =>{
+                        emailError.textContent = ' ';
+                    },3000);
                 }
                 break
             default:
