@@ -30,6 +30,9 @@ inputs.forEach((input) => {
                 } else {
                     statusInfo.name = false
                     nameError.textContent = 'Sólo se aceptan letras'
+                    setTimeout(() =>{
+                        nameError.textContent = ' ';
+                    },3000);
                 }
                 break
             case 'usuario':
@@ -39,6 +42,9 @@ inputs.forEach((input) => {
                 } else {
                     statusInfo.user = false
                      userError.textContent = 'Usuario invalido'
+                     setTimeout(() =>{
+                        userError.textContent = ' ';
+                    },3000);
                 }
                 break
             case 'contrasenia':
@@ -48,6 +54,9 @@ inputs.forEach((input) => {
                 } else {
                     statusInfo.password = false
                     passwordError.textContent = 'Contraseña invalida'
+                    setTimeout(() =>{
+                        passwordError.textContent = ' ';
+                    },3000);
                 }
                 break
             case 'email':
@@ -57,6 +66,9 @@ inputs.forEach((input) => {
                 } else {
                     statusInfo.email = false
                     emailError.textContent = 'Email invalido'
+                    setTimeout(() =>{
+                        emailError.textContent = ' ';
+                    },3000);
                 }
                 break
             default:
