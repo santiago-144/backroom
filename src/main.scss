@@ -610,16 +610,6 @@ transform: scale(1.2);
   transform: scale(1.1);
   filter: blur(15px);
 }
-/* .cont-letra span::after {
-  content: var(--l);
-  position: absolute;
-  height: 200%;
-  width: 300px;
-  top: 80%;
-  left: 0;
-  filter: blur(30px);
-  transform: rotateX(50deg);
-} */
 .cont-letra span:hover {
   filter: contrast(250%);
 }
