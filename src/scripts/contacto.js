@@ -1,23 +1,21 @@
 const expresiones = {
-    nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/,
-    usuario: /^[a-zA-Z0-9\_\-]{4,16}$/,
-    contrasenia: /^.{4,12}$/,
-    email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
+	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
+	email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
+	telefono: /^\d{7,14}$/ // 7 a 14 numeros.
 }
 
 const statusInfo = {
     name: false,
-    user: false,
-    password: false,
+    phone: false,
     email: false,
 }
 
 const form = document.querySelector('form')
 const inputs = document.querySelectorAll('input')
 const nameError = document.querySelector('#name-error')
-const userError = document.querySelector('#user-error')
+const lastnameError = document.querySelector('#lastname-error')
+const phoneError = document.querySelector('#phone-error')
 const emailError = document.querySelector('#email-error')
-const passwordError = document.querySelector('#password-error')
 
 inputs.forEach((input) => {
     input.addEventListener('keyup', (e) => {
@@ -35,27 +33,27 @@ inputs.forEach((input) => {
                     },3000);
                 }
                 break
-            case 'usuario':
-                if (expresiones.usuario.test(e.target.value)) {
-                    statusInfo.user = true
-                    userError.textContent = ''
+            case 'apellido':
+                if (expresiones.nombre.test(e.target.value)) {
+                    statusInfo.name = true
+                    lastnameError.textContent = ''
                 } else {
-                    statusInfo.user = false
-                     userError.textContent = 'Usuario invalido'
-                     setTimeout(() =>{
-                        userError.textContent = ' ';
+                    statusInfo.name = false
+                    lastnameError.textContent = 'Solo se aceptan letras'
+                    setTimeout(() =>{
+                        lastnameError.textContent = ' ';
                     },3000);
                 }
                 break
-            case 'contrasenia':
-                if (expresiones.contrasenia.test(e.target.value)) {
-                    statusInfo.password = true
-                    passwordError.textContent = ''
+            case 'telefono':
+                if (expresiones.telefono.test(e.target.value)) {
+                    statusInfo.phone = true
+                    phoneError.textContent = ''
                 } else {
-                    statusInfo.password = false
-                    passwordError.textContent = 'Contraseña invalida'
+                    statusInfo.phone = false
+                    phoneError.textContent = 'Telefono no valido'
                     setTimeout(() =>{
-                        passwordError.textContent = ' ';
+                        phoneError.textContent = ' ';
                     },3000);
                 }
                 break
@@ -79,5 +77,5 @@ inputs.forEach((input) => {
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
-    Object.values(statusInfo).includes(false) ? alert('Existen campos vacíos'): alert('Todos los campos son validos'); 
+    Object.values(statusInfo).includes(false) ? alert('Existen campos vacíos o hay valores incorrectos'): alert('Todos los campos son validos'); 
 });
