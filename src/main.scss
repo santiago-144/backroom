@@ -400,7 +400,7 @@ border-radius: 10px;
 
 #avatar-navbar-h{
   width: 50px;
-  border-radius: 50%;
+  border-radius: 30%;
   transform: scale(1.1);
   cursor: pointer;
   padding-bottom: 8px;
@@ -460,6 +460,57 @@ border-radius: 10px;
 .photo-gallery .item {
   padding-bottom:30px;
 }
+
+@media only screen and (max-width: 1024px) {
+  #navbar {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  #responsive-perfil {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  #search-bar, #navbar-menssage, #navbar-start, #navbar-flame {
+    display: none;
+  }
+}
+
+
+/* AVATAR RESPONSIVE */
+.responsive-perfil{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+#responsive-img-avatar{
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+}
+
+// #responsive-perfil-menu{
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: space-between;
+//   margin: 20px;
+//   text-decoration: none;
+//   color: black;
+//   padding: 15px;
+// }
+
+// #responsive-perfil-menu:hover{
+//   background: linear-gradient(#D426FF, #6980FD);
+//   border-radius: 10px;
+//   color:#fff;
+//   text-decoration: none;
+// }
+
 
 
 
@@ -537,15 +588,14 @@ border-radius: 10px;
 #profile-name {
   font-size: 20px;
   font-weight: bold;
-
 }
-  
 
 #section-saved{
   border-top: 1px solid rgb(219, 219, 219);
   font-size: 20px;
   color: black;
 }
+
 
 /*........................Home santiago.................*/
 #row-navbar-home{
@@ -710,6 +760,195 @@ transform: scale(1.2);
 .content a:hover {
   letter-spacing: 0.3em;
 }
+
+/*****************  PUBLICACION ********************/
+
+
+/* Imágenes */
+
+.images-cards figure {
+  position: relative;
+}
+
+.images-cards img {
+  height: 240px;
+}
+
+.images-cards figure figcaption {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.4);
+  color: black;
+  font-size: 44px;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.images-cards figure figcaption:hover {
+  opacity: 1;
+}
+
+/* Selector de imágenes */
+
+#Images .add-new-photo {
+  display: flex;
+  border: 4px dashed black;
+  width: 400px;
+  height: 400px;
+  min-height: 240px;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  color: black;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#Images .add-new-photo.first:hover {
+  background: rgba(255, 255, 255, 0.17);
+}
+
+#add-photo-container input {
+  display: none;
+}
+
+/* Modal */
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: inline-block !important;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  opacity: 0;
+  z-index: 10;
+  transition: 0.3s all ease;
+}
+
+.modal.show {
+  opacity: 1;
+  z-index: 10;
+}
+
+.modal .modal-main {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: fixed;
+  top: -100%;
+  left: 0;
+  padding: 0 5px;
+  transition: 0.3s all ease;
+}
+
+.modal.show .modal-main {
+  top: 0;
+}
+
+.modal .modal-main .row {
+  padding: 0 !important;
+  margin: 0 !important;
+  margin-top: 50px !important;
+}
+
+.modal .modal-main .row > div {
+  align-self: stretch !important;
+}
+
+.modal .modal-main .modal-card {
+  padding: 15px;
+  display: none;
+  background: #fff;
+  box-shadow: 0 0 4px 0 rgba(0,0,0,.08), 0 2px 4px 0 rgba(0,0,0,.12);
+  margin: 50px;
+}
+
+/* Loader */
+
+#loading {
+  color: #696969;
+  text-align: center;
+}
+
+#loading .preloader {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  border: 10px solid #eee;
+  border-top: 10px solid #666;
+  border-radius: 50%;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: loading;
+}
+
+#loading .tag {
+  font-size: 16px;
+  display: inline-block;
+  width: 100%;
+  margin-top: 8px;
+}
+
+@keyframes loading {
+
+  0% {
+    transform: rotateZ(0);
+  }
+
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+/* ->Modal */
+
+.flex-center {
+align-self: center !important;
+}
+
+#btn-responsive{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+}
+
+.btn-responsive button{
+  padding: 10px 25px;
+  font-size: 15px;
+  border: 0;
+  outline: none;
+  background-color: #52057B;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 20px;  
+}
+
+
+@media only screen and (min-width: 1200px) {
+  #btn-responsive {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  #publication-area {
+    display: none;
+  }
+}
+
+
+
+
 //Recuperar contraseña
 #recpas {
   font-family: 'Roboto', sans-serif;
