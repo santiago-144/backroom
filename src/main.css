@@ -10382,7 +10382,7 @@ a {
 
 #avatar-navbar-h {
   width: 50px;
-  border-radius: 50%;
+  border-radius: 30%;
   transform: scale(1.1);
   cursor: pointer;
   padding-bottom: 8px;
@@ -10466,23 +10466,6 @@ a {
   width: 150px;
   height: auto;
   border-radius: 50%;
-}
-
-#responsive-perfil-menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 20px;
-  text-decoration: none;
-  color: black;
-  padding: 15px;
-}
-
-#responsive-perfil-menu:hover {
-  background: linear-gradient(#D426FF, #6980FD);
-  border-radius: 10px;
-  color: #fff;
-  text-decoration: none;
 }
 
 /* PERFIL */
