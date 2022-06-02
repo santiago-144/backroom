@@ -10519,7 +10519,6 @@ a {
   color: black;
 }
 
-<<<<<<< HEAD
 /*........................Home santiago.................*/
 #row-navbar-home {
   border: 2px solid #C4C4C4;
@@ -10536,18 +10535,11 @@ a {
 }
 
 .grid-container {
-  /* display: grid;
-  grid-template-columns: repeat(auto-fill, 230px);
-  gap: 20px;
-  justify-content: center; */
-  /* grid-template-rows: masonry; */
   margin: 0 auto;
 }
 
 .grid-item {
   width: 230px;
-  /* height: 200px;
-  object-fit: cover; */
   margin-bottom: 40px;
   border-radius: 15px;
   cursor: pointer;
@@ -10580,7 +10572,148 @@ a {
 
 #avatar-friends:hover {
   transform: scale(1.2);
-=======
+}
+
+.cont-letra span {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Fredoka One";
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+
+.cont-letra span::before {
+  content: var(--l);
+  position: absolute;
+  transform: scale(1.1);
+  filter: blur(15px);
+}
+
+/* .cont-letra span::after {
+  content: var(--l);
+  position: absolute;
+  height: 200%;
+  width: 300px;
+  top: 80%;
+  left: 0;
+  filter: blur(30px);
+  transform: rotateX(50deg);
+} */
+.cont-letra span:hover {
+  filter: contrast(250%);
+}
+
+.cont-letra span:nth-child(1) {
+  color: #bb00ff;
+}
+
+.cont-letra span:nth-child(2) {
+  color: #bb00ff;
+}
+
+.cont-letra span:nth-child(3) {
+  color: #bb00ff;
+}
+
+.box {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.box::before {
+  content: "";
+  position: absolute;
+  inset: 4px 35px;
+  background: linear-gradient(315deg, #dd0b8c, #0a83ec);
+  transition: 0.4s;
+  animation: animate 3s linear infinite;
+}
+
+.box:hover::before {
+  inset: -20px 0px;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.box::after {
+  content: "";
+  position: absolute;
+  inset: 6px;
+  background: #0f1846;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.content {
+  position: absolute;
+  inset: 10px;
+  border: 3px solid #0a83ec;
+  z-index: 3;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.box:hover .content img {
+  opacity: 0;
+}
+
+.content h2 {
+  position: relative;
+  font-size: 0.5em;
+  text-align: center;
+  color: #fff;
+  font-weight: 10;
+  letter-spacing: 0.05em;
+}
+
+.content h2 span {
+  font-weight: 300;
+  font-size: 0.75em;
+}
+
+.content a {
+  position: relative;
+  margin-top: 1px;
+  padding: 2px 2px;
+  background: #fff;
+  color: #0f1846;
+  border-radius: 25px;
+  font-weight: 50;
+  font-size: 0.25em;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+.content a:hover {
+  letter-spacing: 0.3em;
+}
+
 #recpas {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -10610,7 +10743,6 @@ a {
 #logo_muj {
   width: auto;
   height: 400px;
->>>>>>> 711896cd2389fe06510f8fd3f2d5034618dc403d
 }
 
 /*# sourceMappingURL=main.css.map */
