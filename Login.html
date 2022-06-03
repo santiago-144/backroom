@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" id="html_login_regis">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../main.css">
+    <link rel="icon" href="../img/brl.png">
+    <title>Iniciar sesión</title>
+</head>
+
+<body class="text-center" id="back-color">
+    <div class="container" id="img-superior">
+        <img src="../img/humo_celular.png" class="img-fluid" alt="">
+    </div>
+    <div class="container" id="container_login_regis">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md" id="logo">
+                    <img src="../img/logo_sin_fondo.png" alt="logo backroom completo" class="img-fluid rounded float-right" id="logo_bk">
+                    <img src="../img/logo_bk_celular.png" alt="logo_backroom_celular" class="img-fluid mx-auto " id="logo_bk_celular">
+                </div>
+                <div class="col-md">
+                    <h3 id="login">Iniciar sesión</h3>
+                    <form>
+                        <div class="form-group my-3">
+                            <input type="text" class="form-control text-left mx-auto format-login " id="formGroupExampleInput" placeholder="Nombre del usuario" name="email">
+                            <div class="container" style="height: 3vh;">
+                                <label id="email-error"></label>
+                            </div>
+                        </div>
+                        <div class="form-group my-2">
+                            <input type="password" class="form-control text-left mx-auto format-login" id="formGroupExampleInput2" placeholder="Contraseña">
+                        </div>
+                        <div class="button mt-4" id="button">
+                            <button class="bt-lg mx-auto" id="button-login">Iniciar Sesion</button>
+                        </div>
+                        <div class="links mt-3">
+                            <a class="mx-auto link" href="RecuperarContraseña.html">¿Has olvidado tu contraseña?</a>
+                            <br> 
+                            <a class="mx-auto link" href="../pages/Registro.html">¿Quieres crear una cuenta?¡Registrate ahora!</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row" id="img-teen">
+                <div class="col">
+                    <img src="../img/chicos2.png" alt="" id="tenn" class="float-left img-fluid">
+                    <img src="../img/boy_solo.png" alt="" id="boy_solo" class="img-fluid mx-auto">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="text-black font-weight-bolder" id="footer_login">
+        <div class="container">
+            <div class="row justify-content-start">
+                <div class="col col-3 col-lg-1">
+                    <a href="Contact.html" class="link">
+                        <p class="pt-3">Contacto</p>
+                    </a>
+                </div>
+                <div class="col col-3 col-lg-2">
+                    <a href="AboutUs.html" class="link">
+                        <p class="pt-3">About us</p>
+                    </a>
+                </div>
+                <div class="col-6 col-lg-9 text-right">
+                    <p class="pt-3">©️ 2022 Backroom</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="../scripts/login.js"></script>
+</body>
+</html>
