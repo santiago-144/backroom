@@ -312,31 +312,7 @@ border-radius: 10px;
 
 
 //Home
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border box;
-}
-
-/* @media only screen and (max-width: 425px){
-    #barra{
-        display: none;
-    }
-}
-
-@media only screen and (min-width: 426px){
-
-    .nav-res-cel{
-        display: none;   
-    }
-
-    .barra-res{
-        display: none;
-    }
-}
-
-*/
-#btn-mas{
+/*#btn-mas{
   display: nome;
 }
 
@@ -377,10 +353,7 @@ opacity: 1;
 visibility: visible;
 }
 
- 
-
-
-
+*/
 
 /************************* PERFIL *****************************************/
 
@@ -647,7 +620,8 @@ visibility: visible;
 }
 
 
-/*........................Home santiago.................*/
+/*........................Home .................*/
+
 #row-navbar-home{
   border: 2px solid #C4C4C4;
   background-color: rgb(255, 255, 255,0.99);
@@ -655,11 +629,28 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 border-radius: 15px;
 height:auto;
 margin: 5px 10px 2px 10px;
-padding: 0;
+padding: 15px;
 }
+
 .dropdown-menu{
   right: 0;
 }
+
+//menu
+
+#menu>li{
+  float: left;
+  text-align:center
+}
+#menu>li>ul{
+  display: none;
+}
+#menu>li:hover>ul {
+  display:block;
+}
+//
+
+//contenedor home
 .grid-container {
 
   margin: 0 auto;
@@ -676,20 +667,21 @@ padding: 0;
 .grid-item:hover {
   filter: opacity(0.9);
   transform: scale(1.1);
-}
+} 
 #menu-friends {
   margin-top: 20vh;
   position: fixed;
   top: 10vh;
   right: 3vw;
-  bottom: 0;
+  bottom: 50px;
   z-index: 3;
   transition: all 0.5s;
-  padding: 15px;
+  padding: 30px;
   overflow-y: auto;
+  text-align: center;
 }
 #avatar-friends{
-  width: 50px;
+  width: 70px;
   border-radius: 50%;
   transform: scale(1.1);
   cursor: pointer;
@@ -701,32 +693,40 @@ transform: scale(1.2);
 .cont-letra span {
   font-size: 30px;
   font-weight: bold;
-  font-family: "Fredoka One";
-  cursor: pointer;
+  font-family: "Roboto";
+
+cursor: pointer;
   transition: all 300ms ease-in-out;
 }
-.cont-letra span::before {
+
+/*.cont-letra span::before {
   content: var(--l);
   position: absolute;
   transform: scale(1.1);
-  filter: blur(15px);
-}
+  //filter: blur(15px);
+}*/
+
 .cont-letra span:hover {
-  filter: contrast(250%);
+filter: contrast(250%);
+} 
+
+.cont-letra /*span:nth-child(1) */ {
+  color: #BC6FF1;
+  background: linear-gradient(to D426FF, 6980FD);
+text-align: center;
+
 }
-.cont-letra span:nth-child(1) {
+/*.cont-letra span:nth-child(2) {
   color: #BC6FF1;
 }
-.cont-letra span:nth-child(2) {
-  color: #BC6FF1;
-}
-.cont-letra span:nth-child(3) {
+*/
+.cont-letra /*span:nth-child(3)*/ {
   color: #BC6FF1;
 }
 .box {
   position: relative;
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   overflow: hidden;
 }
@@ -749,18 +749,20 @@ transform: scale(1.2);
     transform: rotate(360deg);
   }
 }
+
 .box::after {
   content: '';
   position: absolute;
   inset: 6px;
-  background: #0f1846;
+  background: -prefix-linear-gradient(left top, D426FF, 6980FD);
   border-radius: 50%;
   z-index: 1;
 }
+
 .content {
   position: absolute;
   inset: 10px;
-  border: 3px solid #0a83ec;
+  border: 3px solid #c81adf;
   z-index: 3;
   border-radius: 50%;
   overflow: hidden;
@@ -769,6 +771,7 @@ transform: scale(1.2);
   align-items: center;
   flex-direction: column;
 }
+
 .content img {
   position: absolute;
   top: 0;
@@ -780,6 +783,7 @@ transform: scale(1.2);
   pointer-events: none;
   z-index: 3;
 }
+
 .box:hover .content img {
   opacity: 0;
 }
@@ -788,7 +792,7 @@ transform: scale(1.2);
   position: relative;
   margin-top: 1px;
   padding: 2px 2px;
-  background: #fff;
+  background: none;
   color: #0f1846;
   border-radius: 25px;
   font-weight: 50;
@@ -797,11 +801,26 @@ transform: scale(1.2);
   text-decoration: none;
   transition: 0.4s;
 }
+
 .content a:hover {
   letter-spacing: 0.3em;
 }
+
 .list-group-item{
   border:none;
+}
+
+#tipo-font{
+  font-family: "Roboto";
+  font-size: 20px;
+  color: white;
+  
+}
+
+#tipo-font2{
+  font-family: "Roboto";
+  font-size: 25px;
+  text-align: center;
 }
 
 /*****************  PUBLICACION ********************/
@@ -1021,3 +1040,110 @@ align-self: center !important;
   width: auto;
   height: 400px;}
 
+
+
+  /* REVIEWS */
+
+  //nueva barra reviews
+/*
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100%;
+  font-family: "Roboto";
+  background: #fafafa;
+}
+
+nav{
+  min-width: 1024px;
+  max-width: 1400px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  border-bottom: solid #dbdbdb 1px;
+}
+
+.navbar-cont{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+}
+.cont-input{
+  height: 70px;
+  border: salid 1px #dbdbdb;
+  display: flex;
+  align-items: center;
+  background: #fafafa;
+  padding: 5px;
+  text-align: -5000px;
+}
+
+.cont-input input{
+  border: 0;
+  outline: none;
+  background: #fafafa;
+}
+
+.iconos{
+  margin: 0 10 px;
+  cursor: pointer;
+}
+
+header{
+  width: 60%;
+  margin: auto;
+  transform: translateY(50px);
+  padding: 20px 0;
+}
+
+*/
+
+
+// info perfile //
+   
+.info {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  float: left;
+  
+}
+
+/*.info::before {
+  content: '';
+  position: absolute;
+  inset: 20px 0px;
+  background: linear-gradient(315deg,#52057B,#000000);
+  transition: 0.4s;
+  animation: animate 3s linear infinite;
+}
+
+.info:hover::before {
+  inset: -20px 0px;
+}
+@keyframes animate {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+.info::after {
+  content: '';
+  position: absolute;
+  inset: 6px;
+  background: -prefix-linear-gradient(left top, D426FF, 6980FD);
+  border-radius: 50%;
+  z-index: 1;
+} */
