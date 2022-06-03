@@ -666,11 +666,11 @@ padding: 0;
 }
 
 .grid-item {
-  width: 230px;
+  width: 200px;
   margin-bottom: 40px;
   border-radius: 15px;
   cursor:pointer;
-  background-color: lightgray;
+  background-color: rgb(137, 44, 220,0.2);
 }
 
 .grid-item:hover {
@@ -678,6 +678,7 @@ padding: 0;
   transform: scale(1.1);
 }
 #menu-friends {
+  margin-top: 20vh;
   position: fixed;
   top: 10vh;
   right: 3vw;
@@ -710,40 +711,30 @@ transform: scale(1.2);
   transform: scale(1.1);
   filter: blur(15px);
 }
-/* .cont-letra span::after {
-  content: var(--l);
-  position: absolute;
-  height: 200%;
-  width: 300px;
-  top: 80%;
-  left: 0;
-  filter: blur(30px);
-  transform: rotateX(50deg);
-} */
 .cont-letra span:hover {
   filter: contrast(250%);
 }
 .cont-letra span:nth-child(1) {
-  color: #bb00ff;
+  color: #BC6FF1;
 }
 .cont-letra span:nth-child(2) {
-  color: #bb00ff;
+  color: #BC6FF1;
 }
 .cont-letra span:nth-child(3) {
-  color: #bb00ff;
+  color: #BC6FF1;
 }
 .box {
   position: relative;
-  width: 80px;
-  height: 80px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   overflow: hidden;
 }
 .box::before {
   content: '';
   position: absolute;
-  inset: 4px 35px;
-  background: linear-gradient(315deg,#dd0b8c,#0a83ec);
+  inset: 20px 0px;
+  background: linear-gradient(315deg,#52057B,#000000);
   transition: 0.4s;
   animation: animate 3s linear infinite;
 }
@@ -792,18 +783,7 @@ transform: scale(1.2);
 .box:hover .content img {
   opacity: 0;
 }
-.content h2 {
-  position: relative;
-  font-size: 0.5em;
-  text-align: center;
-  color: #fff;
-  font-weight: 10;
-  letter-spacing: 0.05em;
-}
-.content h2 span {
-  font-weight: 300;
-  font-size: 0.75em;
-}
+
 .content a {
   position: relative;
   margin-top: 1px;
@@ -812,13 +792,16 @@ transform: scale(1.2);
   color: #0f1846;
   border-radius: 25px;
   font-weight: 50;
-  font-size: 0.25em;
+  font-size: 1.25em;
   letter-spacing: 0.05em;
   text-decoration: none;
   transition: 0.4s;
 }
 .content a:hover {
   letter-spacing: 0.3em;
+}
+.list-group-item{
+  border:none;
 }
 
 /*****************  PUBLICACION ********************/
