@@ -1,0 +1,31 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+#container{
+  margin-top: 28vh;
+  margin-bottom: 25vh;
+  #form{
+      text-align: center;
+      align-items: center;
+      .form-control{
+          text-align: center;
+          justify-content: center;
+      }
+      button{
+          color: white;
+          width: 270px;
+          border-radius: 5px;
+          background-color: rgb(173, 53, 177);
+          border: none;
+          
+      }
+  }
+}
+footer{
+  justify-content: center;
+  margin-top: 15vh;
+  background-color: rgb(202, 198, 198);
+  height: 70px;
+}
