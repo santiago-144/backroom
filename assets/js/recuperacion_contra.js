@@ -1,10 +1,8 @@
 const expresiones = {
     email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
 }
-/* const boton_login=document.getElementById('button-login');
-const clave=document.getElementById('formGroupExampleInput2');
-const email=document.getElementById('formGroupExampleInput');
- */const form = document.querySelector('form');
+
+const form = document.querySelector('form');
 const inputs = document.querySelectorAll('input');
 const emailError = document.querySelector('#email-error');
 const statusInfo = {
@@ -35,5 +33,5 @@ inputs.forEach((input) => {
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
-    Object.values(statusInfo).includes(false) ? alert('Datos Incorrectos'): window.location.href="home.html"; 
+    Object.values(statusInfo).includes(false) ? alert('Existen campos vacíos'): alert('Todos los campos son validos'); 
 });
