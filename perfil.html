@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
-  <!--  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/perfil.css">
     <link rel="icon" href="../img/brl.png">
@@ -14,22 +14,30 @@
 <body>
   
   <!-- Navbar -->
-  <nav id="row-navbar" class="navbar shadow-longer align-items-center d-flex justify-content-between mb-5 navbar-expand-lg">
-    <div id="container-searchbar">
+  <nav id="row-navbar-home" class="navbar shadow-longer align-items-center d-flex justify-content-between mb-5 navbar-expand-lg sticky-top">
+    <div id="container-searchbar" class="col-3 text-left">
       <a href="#"><img src="assets/img/Home.svg" alt=""></a>
       <form id="search-bar" class="">
         <button type="submit"><img src="assets/img/icon-search.svg"></button>            
         <input  type="text" class="" placeholder="" >
       </form>
     </div>
-    <div class="pr-5">
+    <div class="text-center col-6">
       <a href="#"><img src="assets/img/Logo-navbar.svg" alt=""></a>
     </div>
-    <div>
-      <a href="#navbar-menssage"><img src="../img/message.svg" alt=""></a>
-      <a href="#navbar-start"><img src="assets/img/icon-start.svg" alt=""></a>
-      <a href="#navbar-flame"><img src="assets/img/icon-flame.svg" alt=""></a>
-      <a href="#"><img src="assets/img/icon-hamburger.svg" alt=""></a>
+    <div class="col-3 text-right">
+      <a href="#"><img src="../img/message.svg" alt=""></a>
+      <a href="#"><img src="assets/img/icon-start.svg" alt=""></a>
+      <a href="#"><img src="assets/img/icon-flame.svg" alt=""></a>
+      <a class="dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+        <img src="assets/img/icon-hamburger.svg" alt="">
+      </a>
+      <ul class="dropdown-menu " aria-labelledby="navbarScrollingDropdown">
+        <li><a class="dropdown-item" href="contacto.html">Contacto</a></li>
+        <li><a class="dropdown-item" href="about_us.html">About Us</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="perfil.html">Perfil</a></li>
+      </ul>
     </div>
   </nav>
 
@@ -37,11 +45,11 @@
   <header id="header" class="d-flex flex-column justify-content-center">
     <nav id="navbar" class="navbar nav-menu">
       <ul>
-        <li><a href="#" class="nav-link scrollto"><i class="bx bx-home"></i> <span>Seguidores</span></a></li>
-        <li><a href="#" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Seguidos</span></a></li>
+        <li><a href="#" class="nav-link scrollto"><img href="assets/icon/icon-user.svg" alt=""><span>Seguidores</span></a></li>
+        <li><a href="#" class="nav-link scrollto"><img href="assets/icon/icon-user.svg" alt=""><span>Seguidos</span></a></li>
         <li><a href="publicaciones.html"><img id="avatar-navbar-h" src="assets/img/miperfil-fotoavatar.png" alt=""></a></li>
-        <li><a href="#" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Review</span></a></li>
-        <li><a href="#" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Guardado</span></a></li>
+        <li><a href="#" class="nav-link scrollto"><img href="assets/icon/icon-user.svg" alt=""><span>Review</span></a></li>
+        <li><a href="#" class="nav-link scrollto"><img href="assets/icon/icon-user.svg" alt=""><span>Guardado</span></a></li>
       </ul>
     </nav>
   </header>
@@ -49,33 +57,21 @@
 
   <!-- GALLERY-->
   <div class="container ">
-
-    <!-- HEADER RESPONSIVE -->
     <div id="responsive-perfil" class="row responsive-perfil">
-      <a class="nav-link text-dark" href="publicaciones.html"><img id="responsive-img-avatar" src="assets/img/miperfil-fotoavatar.png" alt=""></a>
-      
-      <div id="responsive-perfil-menu" class="mb-3">
-        <ul class="nav justify-content-between">
-          <li class="nav-item m-3">
-            <a class="nav-link text-dark" href="#"><img src="assets/img/icon-user.svg" alt="">Seguidores</a>
-          </li>
-          <li class="nav-item m-3">
-            <a class="nav-link text-dark" href="#"><img src="assets/img/icon-user.svg" alt="">Seguidos</a>
-          </li>
-          <li class="nav-item m-3">
-            <a class="nav-link text-dark" href="#"><img src="assets/img/icon-user.svg" alt="">Reviews</a>
-          </li>
-          <li class="nav-item m-3">
-            <a class="nav-link text-dark"><img src="assets/img/icon-saved.svg" alt="">Guardado</a>
-          </li>
-        </ul>
+      <img id="responsive-img-avatar" src="assets/img/miperfil-fotoavatar.png" alt="">
+      <div id="responsive-perfil-menu">
+        <div><a href="#" class="text-reset"><img src="assets/img/icon-user.svg" alt="">Seguidores</a></div>
+        <div><a href="#" class="text-reset"><img src="assets/img/icon-user.svg" alt="">Seguidos</a></div>
+        <div><a href="#" class="text-reset"><img src="assets/img/icon-start.svg" alt="">Reviews</a></div>
+        <div><a href="#" class="text-reset"><img src="assets/img/icon-saved.svg" alt="">Guardado</a></div>
       </div>    
     </div>
+
     <div class="row mb-5">
-      <div id="col1-img-perfil" class="col-sm-3 col-md-3 col-lg-3 item"><a href="assets/img/desk.jpg" data-lightbox="photos"></a></div>
-      <div id="col2-img-perfil" class="col-sm-3 col-md-3 col-lg-3 item"><a href="assets/img/building.jpg" data-lightbox="photos"></a></div>
-      <div id="col3-img-perfil" class="col-sm-3 col-md-3 col-lg-3 item"><a href="assets/img/loft.jpg" data-lightbox="photos"></a></div>
-      <div id="col4-img-perfil" class="col-sm-3 col-md-3 col-lg-3 item"><a href="assets/img/building.jpg" data-lightbox="photos"></a></div>
+      <div id="col1-img-perfil" class="col-sm-6 col-md-3 col-lg-3 item"><a href="assets/img/desk.jpg" data-lightbox="photos"></a></div>
+      <div id="col2-img-perfil" class="col-sm-6 col-md-3 col-lg-3 item"><a href="assets/img/building.jpg" data-lightbox="photos"></a></div>
+      <div id="col3-img-perfil" class="col-sm-6 col-md-3 col-lg-3 item"><a href="assets/img/loft.jpg" data-lightbox="photos"></a></div>
+      <div id="col4-img-perfil" class="col-sm-6 col-md-3 col-lg-3 item"><a href="assets/img/building.jpg" data-lightbox="photos"></a></div>
     </div>
   </div>
   

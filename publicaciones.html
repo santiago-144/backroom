@@ -3,85 +3,80 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/publicaciones.css">
     <link rel="icon" href="../img/brl.png">
     <title>Publicar</title>
 </head>
 <body>
 
-  <nav id="row-navbar" class="navbar shadow-longer align-items-center d-flex justify-content-between mb-5 navbar-expand-lg">
-    <div id="container-searchbar" class=" text-center">
+  <!-- Navbar -->
+  <nav id="row-navbar-home" class="navbar shadow-longer align-items-center d-flex justify-content-between mb-5 navbar-expand-lg sticky-top">
+    <div id="container-searchbar" class="col-3 text-left">
       <a href="#"><img src="assets/img/Home.svg" alt=""></a>
       <form id="search-bar" class="">
         <button type="submit"><img src="assets/img/icon-search.svg"></button>            
         <input  type="text" class="" placeholder="" >
       </form>
     </div>
-    <div class="text-left">
+    <div class="text-center col-6">
       <a href="#"><img src="assets/img/Logo-navbar.svg" alt=""></a>
     </div>
-    <div class="col-4 text-right">
+    <div class="col-3 text-right">
       <a href="#"><img src="../img/message.svg" alt=""></a>
       <a href="#"><img src="assets/img/icon-start.svg" alt=""></a>
       <a href="#"><img src="assets/img/icon-flame.svg" alt=""></a>
-      <a href="#"><img src="assets/img/icon-hamburger.svg" alt=""></a>
+      <a class="dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+        <img src="assets/img/icon-hamburger.svg" alt="">
+      </a>
+      <ul class="dropdown-menu " aria-labelledby="navbarScrollingDropdown">
+        <li><a class="dropdown-item" href="contacto.html">Contacto</a></li>
+        <li><a class="dropdown-item" href="about_us.html">About Us</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="perfil.html">Perfil</a></li>
+      </ul>
     </div>
   </nav>
 
   <div class="container">
-    <div class="row">
-
       <!-- DROP AREA -->
-      <section id="Images" class="images-cards col-lg-6">
-        <form method="post" enctype="multipart/form-data">
-          <div class="row">
-            <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-12" id="add-photo-container">
+      <section id="Images" class="images-cards">
+        <form id="photo-conatiner-main" method="post" enctype="multipart/form-data">
+            <div class="" id="add-photo-container">
               <div class="add-new-photo first" id="add-photo">
                 <span>Agrega tus mejores fotos</span>
               </div>
               <input type="file" multiple id="add-new-photo" name="images[]">
             </div>
-          </div>
         </form> 
-      </section>
-      
-      <!-- FORMULARIO -->
-      <di id="publication-form" class="col-lg-6 col-md-12">
-        <div id="btn-responsive" class="btn-responsive">
-          <button id="btn-load-responsive">Selecciona tu foto</button>
-          <input type="file" name="" id="input-file" hidden multiple />
+        <di id="publication-form" class="">
+          <p id="contact-title">Configura tu foto</p>
+          <form id="contact-form" action="">
+            <div>
+              <label for="validationCustom02">Titulo</label>
+              <input type="text" class="form-control" id="validationCustom02" value="">
+            </div>
+            <div>
+              <label for="validationCustom02">Link de la prenda</label>
+              <input type="email" class="form-control" id="validationCustom02" value="">
+            </div>
+            <div>
+              <label for="validationCustom02">Descripcion</label>
+              <input type="text" class="form-control" id="validationCustom02" value="">
+            </div>
+            <div class="container d-flex justify-content-end">
+              <button id="contact-btn" class="btn mt-4" type="submit">Publicar</button>
+            </div>
+          </form>
         </div>
-        <p id="contact-title">Configura tu foto</p>
-        <form id="contact-form" action="">
-          <div>
-            <label for="validationCustom02">Titulo</label>
-						<input type="text" class="form-control" id="validationCustom02" value="" required>
-          </div>
-          <div>
-            <label for="validationCustom02"></label>
-						<input type="text" class="form-control" id="validationCustom02" value="" required>
-          </div>
-          <div>
-            <label for="validationCustom02">Link de la prenda</label>
-						<input type="email" class="form-control" id="validationCustom02" value="" required>
-          </div>
-          <div>
-            <label for="validationCustom02">Descripcion</label>
-						<input type="text" class="form-control" id="validationCustom02" value="" required>
-          </div>
-          <div class="container d-flex justify-content-end">
-            <button id="contact-btn" class="btn mt-4" type="submit">Publicar</button>
-          </div>
-        </form>
-      </div>
+      </section>
     </div>
   </div>
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
-    <script src="../scripts/publication.js"></script>
+    <script src="./assets/js/publicaciones.js"></script>
 
 </body>
 </html>
