@@ -10291,20 +10291,77 @@ a {
     left: -80px;
   }
 }
-@media only screen and (max-width: 425px) {
-  #barra {
-    display: none;
-  }
+/**{
+    padding: 0;
+    margin: 0;
+    box-sizing: border box;
 }
-@media only screen and (min-width: 426px) {
-  .nav-res-cel {
-    display: none;
-  }
 
-  .barra-res {
-    display: none;
-  }
+/* @media only screen and (max-width: 425px){
+    #barra{
+        display: none;
+    }
 }
+
+@media only screen and (min-width: 426px){
+
+    .nav-res-cel{
+        display: none;   
+    }
+
+    .barra-res{
+        display: none;
+    }
+}
+
+*/
+/*#btn-mas{
+  display: nome;
+}
+
+.container{
+  position:fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.redes a, .icon-mas2{
+  display: block;
+  text-decoration: none;
+  background: #bc6ff1;
+  color: #fff;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  text-align: center;
+  border-radius: 50px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0,0, 4);
+  transition: all 500ms ease;
+}
+
+.redes a:hover{
+  background: #fff;
+  color: #cc2b2b;
+}
+
+.redes a{
+  margin-bottom: -15px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#btn-mas:checked~ .redes a{
+margin-bottom: 10px;
+opacity: 1;
+visibility: visible;
+}
+
+
+
+
+
+
+
 /************************* PERFIL *****************************************/
 .navbar-aside {
   position: fixed;
@@ -10547,7 +10604,6 @@ a {
   color: black;
 }
 
-
 /*........................Home santiago.................*/
 #row-navbar-home {
   border: 2px solid #C4C4C4;
@@ -10618,6 +10674,16 @@ a {
   filter: blur(15px);
 }
 
+/* .cont-letra span::after {
+  content: var(--l);
+  position: absolute;
+  height: 200%;
+  width: 300px;
+  top: 80%;
+  left: 0;
+  filter: blur(30px);
+  transform: rotateX(50deg);
+} */
 .cont-letra span:hover {
   filter: contrast(250%);
 }
@@ -10934,6 +11000,65 @@ a {
 #logo_muj {
   width: auto;
   height: 400px;
+}
+
+.fondo_transparente {
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.226);
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  display: none;
+}
+
+#modal {
+  background: linear-gradient(0deg, white 70%, rgb(10, 10, 10) 30%);
+  width: 290px;
+  height: 180px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.modal_cerrar {
+  background: white;
+  position: absolute;
+  right: -20px;
+  color: rgb(160, 12, 116);
+  top: -20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.modal_titulo {
+  color: white;
+  font-size: 15px;
+}
+
+.modal_mensaje {
+  padding: 5px 5px;
+  font-size: 10px;
+}
+
+.modal_botones {
+  width: 100%;
+  background: whitesmoke;
+  border-top: whitesmoke 1px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 /*# sourceMappingURL=main.css.map */
