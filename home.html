@@ -38,7 +38,7 @@
   </nav>
     <div class="container">
       <div class="row">
-        <div class="col-10">
+        <div class="col-md-12">
           <div class="row mb-5">
             <div class="col text-center cont-letra">
               <span style="--l: 'Friends¡';">Friends</span>
@@ -48,12 +48,12 @@
             
             </div>
             <div class="row">
-          <div class="grid-container">
-            <img class="grid-item" src="https://picsum.photos/230/128.jpg" width="230" height="128" />
+          <div class="grid-container" id="fotos_moda">
+           <!--  <img class="grid-item" id="btnabrir" src="https://picsum.photos/230/128.jpg" width="230" height="128" />
             <img class="grid-item" src="https://picsum.photos/230/300.jpg" width="230" height="300" />
             <img class="grid-item" src="https://picsum.photos/230/410.jpg" width="230" height="410" />
             <img class="grid-item" src="https://picsum.photos/230/250.jpg" width="230" height="250" />
-            <img class="grid-item" src="https://picsum.photos/230/180.jpg" width="230" height="180" />
+             <img class="grid-item" src="https://picsum.photos/230/180.jpg" width="230" height="180" />
             <img class="grid-item" src="https://picsum.photos/230/340.jpg" width="230" height="340" />
             <img class="grid-item" src="https://picsum.photos/230/120.jpg" width="230" height="120" />
             <img class="grid-item" src="https://picsum.photos/230/215.jpg" width="230" height="215" />
@@ -78,14 +78,31 @@
             <img class="grid-item" src="https://picsum.photos/230/510.jpg" width="230" height="510" />
             <img class="grid-item" src="https://picsum.photos/230/320.jpg" width="230" height="320" />
             <img class="grid-item" src="https://picsum.photos/230/260.jpg" width="230" height="260" />
+         --> </div>
           </div>
+          <div class="fondo_transparente">
+            <div class="d-flex" id="modal">
+              <div class="modal_cerrar">
+                  <span>x</span>
+              </div>
+              <div class="modal_titulo">Menú</div>
+              <div class="modal_botones">
+                <a href="" class="boton"><img src="assets/img/icon-flame.svg" alt=""></a>
+                <a href="" class="boton"><img src="assets/img/icon-start.svg" alt=""></a>
+                <a href="" class="boton"><img src="assets/img/icon-comment.svg" alt="">
+                </a>
+            </div>
+              <div class="modal_mensaje mt-2">
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, nam!</p>
+              </div>
           </div>
+      </div>
         </div>
               <div class="list-group-flush text-center" id="menu-friends"  >
                 <div class="box">
                   <div class="content">
                     <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOKi_fffy_vH6KPdMEGEN_6oAOBFs_I6rLkSERdatg3YZuFmHTB873Czt68ClBkXPaseYHOtn4a5MhkplsBrZZUIsY0c8PdFakdybmT2997NbJs3yY5txCULkQTg88AhGzFWFGy7mKSJfQRFDr8b4ZvzVxGz9r3B1YovU-yIwRVOj1t2gh5VWjHyvE/s1600/pexels-pixabay-220453.jpg">
-                    <a href="#"> Perfil</a>
+                    <a href="perfil.html"> Perfil</a>
                   </div>
                 </div>
                 <p class="list-group-item">Friends</p>
@@ -99,9 +116,21 @@
       </div>
     </div>
    
+    <footer>
+      <div class="barra-res fixed-bottom bg-light align-items-center" id="barra-res">
+          
+                <div class="box align-items-center text-center">
+                  <div class="content text-center">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOKi_fffy_vH6KPdMEGEN_6oAOBFs_I6rLkSERdatg3YZuFmHTB873Czt68ClBkXPaseYHOtn4a5MhkplsBrZZUIsY0c8PdFakdybmT2997NbJs3yY5txCULkQTg88AhGzFWFGy7mKSJfQRFDr8b4ZvzVxGz9r3B1YovU-yIwRVOj1t2gh5VWjHyvE/s1600/pexels-pixabay-220453.jpg">
+                    <a href="perfil.html"> Perfil</a>
+                  </div>
+                </div>
+              
+      </div>
+      </footer>
 
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
-    <script>
+   <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+  <!--   <script>
       var elem = document.querySelector(".grid-container");
       var msnry = new Masonry(elem, {
         // options
@@ -109,12 +138,20 @@
         columnWidth: 200,
         gutter: 20,
         isFitWidth: true
-      });
-    </script>
+      }); 
+    </script> -->
       <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
-
-   
+ <!--    <script>
+      document.getElementById("btnabrir").addEventListener("click",function(){
+       document.getElementsByClassName("fondo_transparente")[0].style.display="block" 
+       return false
+      })
+      document.getElementsByClassName("modal_cerrar")[0].addEventListener("click",  function(){
+        document.getElementsByClassName("fondo_transparente")[0].style.display="none" 
+      })
+    </script> -->
+   <script src="assets/js/moda.js"></script>
 </body>
 </html>
