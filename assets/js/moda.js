@@ -1,6 +1,6 @@
 const foto_moda = "https://picsum.photos/v2/list?page=2&limit=100";
 const fotos= document.getElementById("fotos_moda");
-var elem = document.querySelector(".grid-container");
+var elem = document.querySelector(".ñgrid-container");
 const man="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js";
 
 
