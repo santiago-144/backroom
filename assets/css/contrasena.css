@@ -1,0 +1,172 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+/* //login */
+#html_login_regis {
+    position: relative;
+    min-height: 100%;
+  }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+#back-color {
+  background-image: url(../img/humo2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-bottom: 60px;
+}
+#img-superior{
+  display: none;
+  
+}
+#container_login_regis {
+  margin-top: 23vh;
+}
+.form-control {
+  text-align: center;
+  justify-content: center;
+}
+
+#login {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  color: #000000;
+  text-shadow: 0px 7px 4px rgba(0, 0, 0, 0.25);
+}
+.format-login {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  width: 310px;
+  height: 36px;
+}
+#logo_bk {
+    width: 220px;
+    height: 130px;
+  }
+#logo_bk_celular{
+  display: none;
+}
+#logo_cel{
+  width: 250px;
+  height: 400px;
+}
+#boy_solo{
+  display: none;
+}
+#registro{
+  margin-left: 19vw;
+}
+ @media only screen and (max-width:767px){
+   #registro{
+     margin-left: 0;
+   }
+  #caja_cel{
+    display: none;
+  }
+  #logo_cel{
+    display:none;
+  }
+  #img-superior{
+    display: block;
+    min-width: 100vw;
+    padding: 0;
+    }
+  #logo{
+    height:150px;
+  }  
+  #logo_bk_celular{
+        display:block;
+    }
+    #logo_bk,#logo_muj{
+        display:none;
+    }
+    #back-color {
+      background-image:none;
+    }
+    #container_login_regis {
+      margin-top:0;  
+    }
+    #tenn{
+      display: none;
+    }
+   #boy_solo{
+     display:block;
+     width: 150px;
+  height: 190px;
+  margin-left: 10vw;
+   } 
+  } 
+#button-login {
+  width: 310px;
+  height: 50px;
+  background: #bc6ff1;
+  border-radius: 10px;
+  transform: rotate(0.12deg);
+  border: none;
+  color: white;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+}
+#img-teen {
+  height: 200px;
+}
+#tenn {
+  width: 150px;
+  height: 160px;
+  margin-left: 10vw;
+}
+#footer_login {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    background: rgba(196, 196, 196, 0.2);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: 20vh;
+
+  }
+  .link{
+    color:#000000;
+  }
+  .link:hover{
+    color:#4E0F86;
+  }
+
+
+ /*  //Recuperar contraseña */
+  #recpas {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 48px;
+    text-align: center;
+    color: #000000;
+    text-shadow: 0px 7px 4px rgba(0, 0, 0, 0.25);
+  }
+  #button-recpas {
+    width: 310px;
+    height: 50px;
+    background: #bc6ff1;
+    border-radius: 10px;
+    transform: rotate(0.12deg);
+    border: none;
+    color: white;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  #logo_muj {
+    width: auto;
+    height: 400px;}

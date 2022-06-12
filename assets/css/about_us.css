@@ -1,0 +1,329 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+/* //login */
+#html_login_regis {
+    position: relative;
+    min-height: 100%;
+  }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+#back-color {
+  background-image: url(img/humo2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-bottom: 60px;
+}
+#img-superior{
+  display: none;
+  
+}
+#container_login_regis {
+  margin-top: 23vh;
+}
+.form-control {
+  text-align: center;
+  justify-content: center;
+}
+
+#login {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  color: #000000;
+  text-shadow: 0px 7px 4px rgba(0, 0, 0, 0.25);
+}
+.format-login {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  width: 310px;
+  height: 36px;
+}
+#logo_bk {
+    width: 220px;
+    height: 130px;
+  }
+#logo_bk_celular{
+  display: none;
+}
+#logo_cel{
+  width: 250px;
+  height: 400px;
+}
+#boy_solo{
+  display: none;
+}
+#registro{
+  margin-left: 19vw;
+}
+ @media only screen and (max-width:767px){
+   #registro{
+     margin-left: 0;
+   }
+  #caja_cel{
+    display: none;
+  }
+  #logo_cel{
+    display:none;
+  }
+  #img-superior{
+    display: block;
+    min-width: 100vw;
+    padding: 0;
+    }
+  #logo{
+    height:150px;
+  }  
+  #logo_bk_celular{
+        display:block;
+    }
+    #logo_bk,#logo_muj{
+        display:none;
+    }
+    #back-color {
+      background-image:none;
+    }
+    #container_login_regis {
+      margin-top:0;  
+    }
+    #tenn{
+      display: none;
+    }
+   #boy_solo{
+     display:block;
+     width: 150px;
+  height: 190px;
+  margin-left: 10vw;
+   } 
+  } 
+#button-login {
+  width: 310px;
+  height: 50px;
+  background: #bc6ff1;
+  border-radius: 10px;
+  transform: rotate(0.12deg);
+  border: none;
+  color: white;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+}
+#img-teen {
+  height: 200px;
+}
+#tenn {
+  width: 150px;
+  height: 160px;
+  margin-left: 10vw;
+}
+#footer_login {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    background: rgba(196, 196, 196, 0.2);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: 20vh;
+
+  }
+  .link{
+    color:#000000;
+  }
+  .link:hover{
+    color:#4E0F86;
+  }
+/* //login
+//About us */
+#nbarra {
+  border: 3px solid rgba(83, 82, 82, 0.363);
+  border-radius: 10px;
+  border-top: none;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#feet {
+  justify-content: center;
+  margin-top: 15vh;
+  background-color: rgb(202, 198, 198);
+  height: 70px;
+}
+#dev1,
+#dev2,
+#dev3 {
+  text-align: center;
+  align-items: center;
+  text-decoration: underline;
+  font-style: oblique;
+  font-size: 25px;
+}
+#imagenes-contactol {
+  height: 40px;
+  width: 40px;
+}
+#imagenes-contactog {
+  height: 60px;
+  width: 60px;
+}
+#img-perfil {
+  height: 120px;
+  width: 120px;
+  margin-bottom: 10px;
+}
+#medios {
+  text-align: center;
+}
+#textous {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+#link-about:hover{
+  transform: scale(1.2);
+  background-color:hsl(275, 82%, 85%,0.2);
+  border-radius: 15px;
+}
+#imagenes-contactol:hover,#imagenes-contactog:hover{
+  transform: scale(1.5);
+}
+/* //About us
+//Contact */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* CONTACT */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+ 
+}
+#footer-contac{
+  margin-bottom: 20px;  
+}
+a {
+  text-decoration-line:none;
+  text-decoration: none;
+  text-decoration-color:black;
+}
+
+#contact-container {
+  background-image: url(../src/img/background-contact.jpg);
+  object-fit: cover;
+  background-size: cover;
+  
+ 
+
+}
+
+#contact-col {
+  background-color: #DDB7F8;
+  border-radius: 15px;
+  width: 400px;
+  
+}
+#contact-title{
+  font-size: 20px;
+  font-weight:600;
+  text-align: center;
+}
+#contact-btn{
+  
+  color: white;
+  background-color: #4E0F86;
+}
+#contact-btn:hover{
+  transform: scale(1.1);
+}
+#link-login:hover{
+  transform: scale(1.2);
+  background-color:hsl(275, 82%, 85%,0.2);
+  border-radius: 15px;
+}
+#feetContacto {
+  position: absolute;
+    bottom: 0;
+    width: 100%;
+    height:auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #DDB7F8;
+}
+#validationCustom02{
+  background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), #FFFFFF;
+border-radius: 10px;
+}
+#img-teen-contact{
+  display: none;
+}
+@media only screen and (max-width:767px){
+  #contact-container {
+    background-image:none;
+    margin-top: 10vh;
+  }
+  #contact-col {
+    background-color: #DDB7F8;
+    width: 400px;
+    background: rgba(188, 111, 241, 0.5);
+    border-radius: 70px 0px;
+    
+  }
+  #img-superior{
+    display: block;
+    min-width: 100vw;
+    padding: 0;
+    }
+  #link-login{
+    display: none;
+  }
+  #logo-contac{
+    display: none;
+  }
+  #logo-nav{
+    position: absolute;
+    top: 10px;
+    left: -60px;
+  }
+  #logo-nav:hover{
+    transform: scale(1.2);
+  }
+  #img-teen-contac{
+    display: block;
+    height: 200px;
+    margin-bottom: 10vh;
+  }
+  @media only screen and (max-width:550px){
+    #logo-nav{
+      position: absolute;
+      top: 10px;
+      left: -80px;
+    }
+  }
+}
+/* //contact */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
