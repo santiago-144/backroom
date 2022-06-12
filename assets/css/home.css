@@ -343,4 +343,22 @@ footer{
   footer{
     display: block;
   }
+  .box {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .box::before {
+    content: '';
+    position: absolute;
+    inset: 20px 0px;
+    background: linear-gradient(315deg,#52057B,#000000);
+    transition: 0.4s;
+    animation: animate 3s linear infinite;
+  }
+  .box:hover::before {
+    inset: -20px 0px;
+  
  } 
