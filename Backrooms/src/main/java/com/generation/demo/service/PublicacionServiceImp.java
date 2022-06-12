@@ -1,0 +1,56 @@
+package com.generation.demo.service;
+
+import java.util.List;
+import java.util.Optional;
+import org.springframework.beans.factory.annotation.Autowired;
+import com.generation.demo.model.Publicacion;
+import com.generation.demo.repository.PublicacionRepository;
+import org.springframework.stereotype.Service;
+
+@Service
+public class PublicacionServiceImp implements PublicacionService{
+
+	PublicacionRepository publicacionRepository;
+	
+	public PublicacionServiceImp(@Autowired PublicacionRepository publicacionRepository) {
+		this.publicacionRepository = publicacionRepository;
+	}
+	
+	
+	@Override
+	public Publicacion getPublicacion(Integer id) {
+		Optional<Publicacion> publicacion = publicacionRepository.findById(id);
+		return publicacion.orElse(null);
+	}
+
+	@Override
+	public List<Publicacion> getPublicacion() {
+		return publicacionRepository.findAll();
+	}
+
+	@Override
+	public Publicacion savePublicacion(Publicacion publicacion) {
+		return publicacionRepository.save(publicacion);
+	}
+
+	@Override
+	public Boolean deletePublicacion(Integer id) {
+		//metodo vacio, manejo de errores y se rompa el codigo usamos el try catch
+		
+		try {
+				publicacionRepository.deleteById(id);
+				return true;
+			}
+			catch(Exception e){
+				return false;
+			}
+			
+	}
+
+	@Override
+	public Publicacion updatePublicacion(Publicacion publicacion) {
+		return publicacionRepository.save(publicacion);
+		}
+
+	
+}
