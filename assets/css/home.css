@@ -2,57 +2,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 
-#html_login_regis {
-    position: relative;
-    min-height: 100%;
-  }
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
   }
-
-
-
- 
-
-
-
-
-
-/* AVATAR RESPONSIVE */
-.responsive-perfil{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+#row-navbar-home{
+  border: 2px solid #C4C4C4;
+  background-color: rgb(255, 255, 255,0.99);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+border-radius: 15px;
+height:auto;
+margin: 5px 10px 2px 10px;
+padding: 0;
 }
-
-
-#responsive-img-avatar{
-  width: 150px;
-  height: auto;
-  border-radius: 50%;
-}
-
-
-
-
-
-
-/* PERFIL */
-
-#row-navbar{
-  height: 50px;
-  border-radius: 10px;
-  box-shadow: #DDB7F8;
-  padding: 10px, 0;
-}
-
-#backroom-logo {
-  height: 35px;
-  text-align: left;
-}
-
 #navbar-search-bar {
   border-radius: 15px;
   border: 1px solid rgb(226, 226, 226);
@@ -103,37 +67,10 @@
   background: transparent;
 }
 
-
-#profile-photo{
-  height: 150px;
-  width: 150px;
-  border-radius: 50%;
-}
-
-#profile-name {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-#section-saved{
-  border-top: 1px solid rgb(219, 219, 219);
-  font-size: 20px;
-  color: black;
-}
-
-
-/*........................Home santiago.................*/
-#row-navbar-home{
-  border: 2px solid #C4C4C4;
-  background-color: rgb(255, 255, 255,0.99);
-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-border-radius: 15px;
-height:auto;
-margin: 5px 10px 2px 10px;
-padding: 0;
-}
 .dropdown-menu{
   right: 0;
+  left: auto;
+  max-width: 13rem;
 }
 .grid-container {
 
@@ -362,3 +299,4 @@ footer{
     inset: -20px 0px;
   
  } 
+}
