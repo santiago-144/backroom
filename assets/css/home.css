@@ -90,9 +90,9 @@ padding: 0;
   transform: scale(1.1);
 }
 #menu-friends {
-  margin-top: 20vh;
+ /*  margin-top: 0vh; */
   position: fixed;
-  top: 10vh;
+  top: 40vh;
   right: 3vw;
   bottom: 0;
   z-index: 3;
