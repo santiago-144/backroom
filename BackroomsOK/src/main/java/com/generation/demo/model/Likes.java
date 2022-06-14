@@ -12,9 +12,10 @@ import javax.persistence.Table;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonProperty.Access;
 
+
 @Entity
-@Table(name="like")
-public class Like {
+@Table(name="likes")
+public class Likes {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -24,6 +25,20 @@ public class Like {
 	@Column(name="comentarioLike")
 	private String comentarioLike;
 
+	
+	
+	@ManyToOne
+	@JoinColumn(nullable = false, name="post_id")
+	@JsonProperty(access = Access.WRITE_ONLY)
+	private Publicacion publicaciones;
+
+	@ManyToOne
+	@JoinColumn(nullable = false, name="registro_id")
+	@JsonProperty(access = Access.WRITE_ONLY)
+	private Usuario usuario;
+
+	//setters y getters
+	
 	public Integer getId() {
 		return id;
 	}
@@ -39,18 +54,23 @@ public class Like {
 	public void setComentarioLike(String comentarioLike) {
 		this.comentarioLike = comentarioLike;
 	}
-	
-	/*@ManyToOne
-	@JoinColumn(nullable = false, name="post_id")
-	@JsonProperty(access = Access.WRITE_ONLY)
-	private Publicacion publicaciones;*/
 
-	//@OneToOne
-	//@JoinColumn(nullable = false, name="registro_id")
-	//@JsonProperty(access = Access.WRITE_ONLY)
-	//private Usuario usuario;
+	public Publicacion getPublicaciones() {
+		return publicaciones;
+	}
+
+	public void setPublicaciones(Publicacion publicaciones) {
+		this.publicaciones = publicaciones;
+	}
+
+	public Usuario getUsuario() {
+		return usuario;
+	}
+
+	public void setUsuario(Usuario usuario) {
+		this.usuario = usuario;
+	}
 
 	
-	
-	
+		
 }

@@ -43,11 +43,8 @@ public class Usuario {
 	private List<Publicacion> publicaciones; //publicaciones
 	@OneToMany(mappedBy = "usuario") //publicaciones OJO
 	private List<Comentario> comentarios;
-	//
-	//@OneToOne(mappedBy = "usuario") //publicaciones OJO
-	//private Like like;
-	//
-	
+	@OneToMany(mappedBy = "usuario") //publicaciones OJO
+	private List<Likes> likes;
 	
 	//getters y setters
 	
@@ -100,16 +97,12 @@ public class Usuario {
 	public void setComentarios(List<Comentario> comentarios) {
 		this.comentarios = comentarios;
 	}
-	/*public Like getLike() {
-		return like;
+	public List<Likes> getLikes() {
+		return likes;
 	}
-	public void setLike(Like like) {
-		this.like = like;
+	public void setLikes(List<Likes> likes) {
+		this.likes = likes;
 	}
 	
-	*/
-	
-	
-
-	
+		
 }
