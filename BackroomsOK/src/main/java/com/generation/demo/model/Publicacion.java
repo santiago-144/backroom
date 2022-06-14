@@ -1,5 +1,6 @@
 package com.generation.demo.model;
 
+
 import java.util.List;
 
 import javax.persistence.Column;
@@ -41,24 +42,14 @@ public class Publicacion {
 	@JsonProperty(access = Access.WRITE_ONLY)
 	private Usuario usuario;
 
-	
-	/*@OneToMany(mappedBy = "publicaciones") //publicaciones OJO
-	private List<Like> like;*/
-	//setters y getters
-	
-	
-	/*public List<Like> getLike() {
-		return like;
-	}
+	@OneToMany(mappedBy = "publicaciones") //publicaciones OJO
+	private List<Likes> likes;
 
-	public void setLike(List<Like> like) {
-		this.like = like;
-	}*/
-
+	//getters y setters
+	
 	public Integer getId() {
 		return id;
 	}
-
 
 	public void setId(Integer id) {
 		this.id = id;
@@ -104,5 +95,18 @@ public class Publicacion {
 		this.usuario = usuario;
 	}
 
+	public List<Likes> getLikes() {
+		return likes;
+	}
+
+	public void setLikes(List<Likes> likes) {
+		this.likes = likes;
+	}
+	
+	
+	
+	
+	
+	
 		
 }
