@@ -7,7 +7,7 @@ import com.generation.demo.model.Comentario;
 public interface ComentarioService {
 
 	Comentario getComentario(Integer id);
-	List<Comentario> getComentario();
+	List<Comentario> getComentarios();
 	
 	Comentario saveComentario(Comentario comentario);
 	

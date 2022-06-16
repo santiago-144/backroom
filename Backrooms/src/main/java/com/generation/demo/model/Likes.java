@@ -12,35 +12,55 @@ import javax.persistence.Table;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonProperty.Access;
 
-@Entity
-@Table(name = "comentarios")
-public class Comentario {
 
+@Entity
+@Table(name="likes")
+public class Likes {
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(nullable = false, name="comentario_id")
+	@Column(nullable = false, name="like_id")
 	private Integer id;
 	
-	@Column(name="comentario")
-	private String comentario;
+	@Column(name="comentarioLike")
+	private String comentarioLike;
+
 	
-	@Column(name="reaccion")
-	private Integer reaccion;
 	
 	@ManyToOne
 	@JoinColumn(nullable = false, name="post_id")
 	@JsonProperty(access = Access.WRITE_ONLY)
-	private Publicacion publicacion;
+	private Publicacion publicaciones;
+
 	@ManyToOne
 	@JoinColumn(nullable = false, name="registro_id")
 	@JsonProperty(access = Access.WRITE_ONLY)
 	private Usuario usuario;
 
-	
 	//setters y getters
 	
 	public Integer getId() {
 		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public String getComentarioLike() {
+		return comentarioLike;
+	}
+
+	public void setComentarioLike(String comentarioLike) {
+		this.comentarioLike = comentarioLike;
+	}
+
+	public Publicacion getPublicaciones() {
+		return publicaciones;
+	}
+
+	public void setPublicaciones(Publicacion publicaciones) {
+		this.publicaciones = publicaciones;
 	}
 
 	public Usuario getUsuario() {
@@ -51,37 +71,6 @@ public class Comentario {
 		this.usuario = usuario;
 	}
 
-	public void setId(Integer id) {
-		this.id = id;
-	}
-
-	public String getComentario() {
-		return comentario;
-	}
-
-	public void setComentario(String comentario) {
-		this.comentario = comentario;
-	}
-
-	public Integer getReaccion() {
-		return reaccion;
-	}
-
-	public void setReaccion(Integer reaccion) {
-		this.reaccion = reaccion;
-	}
-
-	public Publicacion getPublicacion() {
-		return publicacion;
-	}
-
-	public void setPublicacion(Publicacion publicacion) {
-		this.publicacion = publicacion;
-	}
-
-
 	
-	
-	
-	
+		
 }

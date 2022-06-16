@@ -1,5 +1,8 @@
 package com.generation.demo.model;
 
+
+import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -7,6 +10,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -27,11 +31,8 @@ public class Publicacion {
 	@Column(name="linkProd")
 	private String linkprod;
 	
-	@Column(nullable = false, name="numReaccion")
-	private Integer numReaccion;
-
-	@Column(nullable = false, name="reaccion")
-	private boolean bolReaccion;
+	@Column(nullable = false, name="titulo")
+	private String titulo;
 	
 	@Column(nullable = false, name="descripcion")
 	private String descripcion;
@@ -41,8 +42,10 @@ public class Publicacion {
 	@JsonProperty(access = Access.WRITE_ONLY)
 	private Usuario usuario;
 
+	@OneToMany(mappedBy = "publicaciones") //publicaciones OJO
+	private List<Likes> likes;
 
-	//setters y getters
+	//getters y setters
 	
 	public Integer getId() {
 		return id;
@@ -68,20 +71,12 @@ public class Publicacion {
 		this.linkprod = linkprod;
 	}
 
-	public Integer getNumReaccion() {
-		return numReaccion;
+	public String getTitulo() {
+		return titulo;
 	}
 
-	public void setNumReaccion(Integer numReaccion) {
-		this.numReaccion = numReaccion;
-	}
-
-	public boolean isBolReaccion() {
-		return bolReaccion;
-	}
-
-	public void setBolReaccion(boolean bolReaccion) {
-		this.bolReaccion = bolReaccion;
+	public void setTitulo(String titulo) {
+		this.titulo = titulo;
 	}
 
 	public String getDescripcion() {
@@ -98,5 +93,20 @@ public class Publicacion {
 
 	public void setUsuario(Usuario usuario) {
 		this.usuario = usuario;
-	}	
+	}
+
+	public List<Likes> getLikes() {
+		return likes;
+	}
+
+	public void setLikes(List<Likes> likes) {
+		this.likes = likes;
+	}
+	
+	
+	
+	
+	
+	
+		
 }

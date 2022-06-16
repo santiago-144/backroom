@@ -1,6 +1,7 @@
 package com.generation.demo.service;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -22,32 +23,36 @@ ComentarioRepository comentarioRepository;
 
 	@Override
 	public Comentario getComentario(Integer id) {
-		// TODO Auto-generated method stub
-		return null;
+		Optional<Comentario> comentario = comentarioRepository.findById(id);
+		return comentario.orElse(null);
 	}
 
 	@Override
-	public List<Comentario> getComentario() {
-		// TODO Auto-generated method stub
-		return null;
+	public List<Comentario> getComentarios() {
+		return comentarioRepository.findAll();
+
 	}
 
 	@Override
 	public Comentario saveComentario(Comentario comentario) {
-		// TODO Auto-generated method stub
-		return null;
+		return comentarioRepository.save(comentario);
 	}
 
 	@Override
 	public Boolean deleteComentario(Integer id) {
-		// TODO Auto-generated method stub
-		return null;
+		try {
+			comentarioRepository.deleteById(id);
+			return true;
+		}
+		catch(Exception e){
+			return false;
+		}
+		
 	}
 
 	@Override
 	public Comentario updateComentario(Comentario comentario) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+		return comentarioRepository.save(comentario);
+		}
 
 }
