@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
 /* CONTACT */
 *{
   box-sizing: border-box;
@@ -23,7 +23,7 @@ a {
 
 #contact-col {
   background-color: #DDB7F8;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 #contact-title{
   font-size: 20px;
@@ -50,6 +50,70 @@ a {
 
 
 /* PERFIL */
+#row-navbar-perfil{
+  border: 2px solid #C4C4C4;
+  background-color: rgb(255, 255, 255,0.99);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+border-radius: 15px;
+height:auto;
+margin: 5px 10px 2px 10px;
+padding: 0;
+}
+#navbar-search-bar {
+  border-radius: 15px;
+  border: 1px solid rgb(226, 226, 226);
+}
+
+#navbar-search-bar-icon {
+  background-color: #ffffff;
+  border-right: 0px solid white;
+}
+
+#container-searchbar{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+
+#search-bar{
+  width: 100%;
+  max-width: 700px;
+  background-color: rgba(255, 255, 255, 0.281);
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  padding: 0px 20px;
+  border: 1px solid rgba(219, 219, 219, 0.4);
+}
+
+#search-bar input{
+  background: transparent;
+  flex: 1;
+  border: 0;
+  outline: none;
+  
+  color: #cac7ff;
+}
+
+#search-bar button img{
+  width: 15px;
+}
+
+#search-bar button{
+  border: 0;
+  border-radius: 10px;
+  width: 20px;
+  height: 20px;
+  padding-right: 30px;
+  cursor: pointer;
+  background: transparent;
+}
+
+.dropdown-menu{
+  right: 0;
+  left: auto;
+  max-width: 13rem;
+}
 
 #row-navbar{
   display: flex;
@@ -382,7 +446,7 @@ a>img{
   align-items: center;
   font-size: 50px;
   color: black;
-  border-radius: 4px;
+  border-radius: 15px;
   cursor: pointer;
 }
 

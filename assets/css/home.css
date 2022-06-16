@@ -1,7 +1,7 @@
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
 * {
     box-sizing: border-box;
@@ -111,9 +111,9 @@ padding: 0;
 transform: scale(1.2);
 }
 .cont-letra span {
-  font-size: 30px;
+  font-size: 33px;
   font-weight: bold;
-  font-family: "Fredoka One";
+  font-family: 'Kaushan Script', cursive;
   cursor: pointer;
   transition: all 300ms ease-in-out;
 }
