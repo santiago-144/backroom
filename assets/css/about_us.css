@@ -11,6 +11,9 @@
     margin: 0;
     padding: 0;
   }
+
+  
+
 #back-color {
   background-image: url(img/humo2.jpg);
   background-size: cover;
@@ -151,6 +154,11 @@
   justify-content: center;
 }
 
+
+body{
+  background-image: url(../img/ropascollage2.png);
+}
+
 #feet {
   justify-content: center;
   margin-top: 15vh;
@@ -165,6 +173,7 @@
   text-decoration: underline;
   font-style: oblique;
   font-size: 25px;
+
 }
 #imagenes-contactol {
   height: 40px;
@@ -185,6 +194,7 @@
 #textous {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
+  color: rgb(53, 2, 53);
 }
 #link-about:hover{
   transform: scale(1.2);
