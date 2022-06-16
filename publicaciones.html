@@ -46,23 +46,23 @@
               <div class="add-new-photo first" id="add-photo">
                 <span>Agrega tus mejores fotos</span>
               </div>
-              <input type="file" multiple id="add-new-photo" name="images[]">
+              <input type="file" id="add-new-photo" name="file">
             </div>
         </form> 
-        <di id="publication-form" class="">
+        <div id="publication-form" class="">
           <p id="contact-title">Configura tu foto</p>
           <form id="contact-form" action="">
             <div>
               <label for="validationCustom02">Titulo</label>
-              <input type="text" class="form-control" id="validationCustom02" value="">
+              <input type="text" class="form-control" id="validationCustom02" value="" name="title">
             </div>
             <div>
               <label for="validationCustom02">Link de la prenda</label>
-              <input type="email" class="form-control" id="validationCustom02" value="">
+              <input type="text" class="form-control" id="validationCustom02" value="" name="prenda">
             </div>
             <div>
               <label for="validationCustom02">Descripcion</label>
-              <input type="text" class="form-control" id="validationCustom02" value="">
+              <input type="text" class="form-control" id="validationCustom02" value="" name="description">
             </div>
             <div class="container d-flex justify-content-end">
               <button id="contact-btn" class="btn mt-4" type="submit">Publicar</button>
@@ -72,6 +72,8 @@
       </section>
     </div>
   </div>
+
+    <script src="assets/js/cargarPublicacion.js"></script>
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
