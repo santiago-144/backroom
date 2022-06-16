@@ -33,7 +33,3 @@ inputs.forEach((input) => {
     });
 });
 
-form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    Object.values(statusInfo).includes(false) ? alert('Datos Incorrectos'): window.location.href="home.html"; 
-});

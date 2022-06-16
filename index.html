@@ -23,18 +23,18 @@
                     </div>
                     <div class="col-md">
                         <h3 id="login">Iniciar sesión</h3>
-                        <form action="home.html" id="form">
+                        <form id="iniciarSesion">
                             <div class="form-group my-3">
-                                <input type="text" class="form-control text-left mx-auto format-login " id="formGroupExampleInput" placeholder="Nombre del usuario" name="email">
+                                <input type="text" class="form-control text-left mx-auto format-login " id="formGroupExampleInput" placeholder="Nombre del usuario" name="user">
                                 <div class="container" style="height: 3vh;">
                                     <label id="email-error"></label>
                                 </div>
                             </div>
                             <div class="form-group my-2">
-                                <input type="password" class="form-control text-left mx-auto format-login" id="formGroupExampleInput2" placeholder="Contraseña">
+                                <input type="password" class="form-control text-left mx-auto format-login" id="formGroupExampleInput2" placeholder="Contraseña" name="contrasenia">
                             </div>
                             <div class="button mt-4" id="button" >
-                                <button class="bt-lg mx-auto" id="button-login" type="submit" name="redirect" >Iniciar Sesion</button>
+                                <button class="bt-lg mx-auto" id="button-login" type="submit" data-toggle="modal" data-target="#exampleModal">Iniciar Sesion</button>
                             </div>
                             <div class="links mt-3">
                                 <a class="mx-auto link" href="recuperacion_con.html">¿Has olvidado tu contraseña?</a>
@@ -71,14 +71,15 @@
                 </div>
             </div>
         </footer>
-        <script type="module" src="assets/js/login.js"></script> 
-
-   
+        <script src="assets/js/login_usuario.js"></script>
+        
+       <!--  <script type="module" src="assets/js/login.js"></script>
+    -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
     <!-- <script src="assets/js/login_enter.js"></script> -->
-   
+  
   </body>
 </html>
