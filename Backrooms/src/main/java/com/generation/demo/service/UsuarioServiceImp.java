@@ -72,6 +72,11 @@ public class UsuarioServiceImp implements UsuarioService, UserDetailsService{
         }
         return new org.springframework.security.core.userdetails.User(user.getCorreo(), user.getPassword(), emptyList());
     }
+
+	@Override
+	public Usuario getUsuarioByCorreo(String correo) {
+		return usuarioRepository.findByCorreo(correo);
+	}
 	
 	
 }

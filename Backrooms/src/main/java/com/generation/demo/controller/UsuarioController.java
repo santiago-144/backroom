@@ -34,6 +34,12 @@ public class UsuarioController {
 			return usuarioService.getUsuario(id);
 		}
 		
+		//Leer
+		@GetMapping("/correo/{correo}")
+		public Usuario getUsuarioByCorreo(@PathVariable String correo) {
+			return usuarioService.getUsuarioByCorreo(correo);
+		}
+		
 		@GetMapping("/all")
 		public List<Usuario> getUsuarios(){
 			return usuarioService.getUsuarios();

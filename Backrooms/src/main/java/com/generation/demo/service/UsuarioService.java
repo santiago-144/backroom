@@ -8,10 +8,14 @@ public interface UsuarioService {
 	Usuario getUsuario(Integer id);
 	List<Usuario> getUsuarios();
 	
+	Usuario getUsuarioByCorreo(String correo);
+	
 	Usuario saveUsuario(Usuario usuario);
 	
 	Boolean deleteUsuario(Integer id);
 	
 	Usuario updateUsuario(Usuario usuario);
+	
+	
 	
 }

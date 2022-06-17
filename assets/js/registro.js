@@ -79,5 +79,59 @@ inputs.forEach((input) => {
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
-    Object.values(statusInfo).includes(false) ? alert('Existen campos vacíos'): alert('Todos los campos son validos'); 
+   console.log(statusInfo);
+   const datos = Object.fromEntries(
+    new FormData(e.target)
+    );
+    console.log(datos);
+    if(!Object.values(statusInfo).includes(false) ){
+        console.log('enviado');
+        fetch('http://localhost:8080/api/backroom/usuario', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                nombre: datos.nombre,
+                usuario: datos.usuario,
+                correo: datos.email,
+                password: datos.contrasenia
+            })
+        })
+        .then(resp => resp.json()).then(data => {
+
+            console.log(data);
+            localStorage.setItem('usuario', JSON.stringify(data))
+            fetch('http://localhost:8080/login', {
+            method: 'POST',
+            body: JSON.stringify( {
+                correo: datos.email,
+                password: datos.contrasenia
+            }),
+            headers: {
+                'Content-type': 'application/json'
+            }
+            }).then(resp => {
+                const token = resp.headers.get('Authorization');
+                
+                if(token && token.includes('Bearer') && resp.ok) {
+                    localStorage.setItem('token', token);
+                    console.log(token);
+                    const url = window.location;
+                    const path = url.pathname.substring(0, url.pathname.lastIndexOf('/') + 1)
+                   location.href = path +  'home.html';
+                } else {
+                    localStorage.removeItem('token');
+                }
+            })
+        })
+        .catch((error) => {
+            console.error(error);
+        })
+    
+
+
+    } else{
+        console.log('no enviado');
+    }
 });
