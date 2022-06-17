@@ -3,6 +3,16 @@ const fotos= document.getElementById("fotos_moda");
 var elem = document.querySelector(".grid-container");
 const modalWin=document.getElementById('windowModal')
 
+
+const nombreUser = document.getElementById('nombreUser')
+console.log(nombreUser.innerHTML);
+console.log(JSON.parse(localStorage.getItem('usuario')).nombre);
+nombreUser.innerHTML=JSON.parse(localStorage.getItem('usuario')).nombre
+
+
+
+
+
 fetch(foto_moda)
   .then((r) => r.json())
   .then((datos) => {
