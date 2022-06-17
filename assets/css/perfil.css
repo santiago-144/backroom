@@ -593,7 +593,14 @@ align-self: center !important;
   }
 }
 
+#imgs-perfil{
+  cursor: pointer;
+  border-radius: 15px;
+}
 
+#imgs-perfil:hover{
+  transform: scale(1.05);
+}
 
 
 

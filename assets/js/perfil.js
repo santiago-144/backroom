@@ -16,7 +16,7 @@ then(datos =>{
         const img = foto.urls.regular;
         // Formato de las cards
         const template = `
-        <img class="w-100 m-2 rounded" src="${img}" alt="">
+        <img id="imgs-perfil" class="w-100 m-2" src="${img}" alt="">
         `
         col1.innerHTML += template;
         // console.log(datosNecesarios);
@@ -35,7 +35,7 @@ then(datos =>{
         const img = foto.urls.regular;
         // Formato de las cards
         const template = `
-        <img class="w-100 m-2 rounded" src="${img}" alt="">
+        <img id="imgs-perfil" class="w-100 m-2" src="${img}" alt="">
         `
         col2.innerHTML += template;
         // console.log(datosNecesarios);
@@ -53,7 +53,7 @@ then(datos =>{
         const img = foto.urls.regular;
         // Formato de las cards
         const template = `
-        <img class="w-100 m-2 rounded" src="${img}" alt="">
+        <img id="imgs-perfil" class="w-100 m-2" src="${img}" alt="">
         `
         col3.innerHTML += template;
         // console.log(datosNecesarios);
@@ -71,7 +71,7 @@ then(datos =>{
         const img = foto.urls.regular;
         // Formato de las cards
         const template = `
-        <img class="w-100 m-2 rounded" src="${img}" alt="">
+        <img id="imgs-perfil" class="w-100 m-2" src="${img}" alt="">
         `
         col4.innerHTML += template;
         // console.log(datosNecesarios);
@@ -89,7 +89,7 @@ then(datos =>{
         const img = foto.urls.regular;
         // Formato de las cards
         const template = `
-        <img class="w-100 m-2 rounded" src="${img}" alt="">
+        <img id="imgs-perfil" class="w-100 m-2" src="${img}" alt="">
         `
         col5.innerHTML += template;
         // console.log(datosNecesarios);
